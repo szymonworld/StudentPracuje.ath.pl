@@ -3,8 +3,28 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+@section Banner {
+<div class="banner">
+    <div class="bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="banner-text text-center">
+                    <div class="text-border">
+                        <h2 class="text-dec">Szukasz pracy?</h2>
+                    </div>
+                    <div class="intro-para text-center quote">
+                        <p class="big-text">Skończyłes studia?</p>
+                        <p class="small-text">Zarejestruj się już dziś i znajdz swoją wymarzoną pracę!</p>
+                        <a href="#." class="btn">ZAREJESTRUJ</a>
+                    </div>
+                    @*<a href="#feature" class="mouse-hover"><div class="mouse"></div></a>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    }
 
-<header class="image-bg-fluid-height">
-    <img class="img-responsive img-center" src="http://placehold.it/200x200&text=Pracuj" alt="">
-</header>
+    @section Content {
+
+    }

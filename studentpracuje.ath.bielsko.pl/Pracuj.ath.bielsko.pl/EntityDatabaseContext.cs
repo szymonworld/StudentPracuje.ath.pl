@@ -19,7 +19,8 @@ namespace studentpracuje.ath.bielsko.pl
         public DbSet<Job> Jobs { get; set; }
         public DbSet<Employer> Employers { get; set; }
 
-        public EntityDatabaseContext() : base("PracujContext")
+        public EntityDatabaseContext() 
+            : base("PracujContext")
         {
             Database.SetInitializer<EntityDatabaseContext>(new DropCreateDatabaseAlways<EntityDatabaseContext>());
         }

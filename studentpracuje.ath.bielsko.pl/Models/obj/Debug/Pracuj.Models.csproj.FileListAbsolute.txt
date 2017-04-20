@@ -10,3 +10,15 @@ C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac
 C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
 C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
