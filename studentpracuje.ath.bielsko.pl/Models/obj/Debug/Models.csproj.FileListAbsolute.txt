@@ -1,0 +1,10 @@
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+C:\Users\Szymon\Downloads\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
