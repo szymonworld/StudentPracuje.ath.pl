@@ -24,6 +24,16 @@ namespace studentpracuje.ath.bielsko.pl
         {
             Database.SetInitializer<EntityDatabaseContext>(new DropCreateDatabaseAlways<EntityDatabaseContext>());
         }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Student>().HasOptional(x => x.CV)
+               .WithMany();
 
+            modelBuilder.Entity<CV>().HasRequired(x => x.Student)
+               .WithMany()
+               .HasForeignKey(x => x.Student_Id);
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }

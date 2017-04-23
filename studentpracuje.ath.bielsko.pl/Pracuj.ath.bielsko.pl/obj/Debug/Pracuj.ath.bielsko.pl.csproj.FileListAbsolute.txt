@@ -150,3 +150,10 @@ C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bi
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.csprojResolveAssemblyReference.cache
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.dll
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.pdb
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\Autofac.Integration.Mvc.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\BCrypt.Net.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\Autofac.Integration.Mvc.xml
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\BCrypt.Net.pdb
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\BCrypt.Net.xml
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\AutoMapper.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\AutoMapper.xml

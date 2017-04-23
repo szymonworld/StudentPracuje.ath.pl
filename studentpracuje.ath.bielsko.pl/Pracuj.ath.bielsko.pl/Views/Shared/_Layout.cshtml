@@ -22,15 +22,14 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Oferty", "Oferty", "Home")</li>
-                    <li>@Html.ActionLink("Zaloguj", "Zaloguj", "Home")</li>
+                    <li>@Html.ActionLink("Oferty", "ShowJobs", "Home")</li>
                 </ul>
-                @* @Html.Partial("_LoginPartial") *@
+                 @Html.Partial("_LoginPartial") 
             </div>
         </div>
     </nav>
 
-    @RenderSection("Banner")
+    @RenderSection("Banner", required: false)
 
     <div class="container body-content">
         @RenderSection("Content")

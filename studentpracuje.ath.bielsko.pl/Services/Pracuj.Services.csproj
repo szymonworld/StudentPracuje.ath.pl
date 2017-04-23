@@ -51,7 +51,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutofacService.cs" />
     <Compile Include="IRepositoryService.cs" />
     <Compile Include="RepositoryService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

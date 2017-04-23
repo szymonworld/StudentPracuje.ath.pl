@@ -1,5 +1,6 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using Pracuj.ath.bielsko.pl.App_Start;
 
 [assembly: OwinStartupAttribute(typeof(Pracuj.ath.bielsko.pl.Startup))]
 namespace Pracuj.ath.bielsko.pl
@@ -8,7 +9,7 @@ namespace Pracuj.ath.bielsko.pl
     {
         public void Configuration(IAppBuilder app)
         {
-
+            
         }
     }
 }
