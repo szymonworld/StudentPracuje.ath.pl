@@ -22,7 +22,7 @@ namespace studentpracuje.ath.bielsko.pl
         public EntityDatabaseContext() 
             : base("PracujContext")
         {
-            Database.SetInitializer<EntityDatabaseContext>(new DropCreateDatabaseAlways<EntityDatabaseContext>());
+            Database.SetInitializer<EntityDatabaseContext>(new DropCreateDatabaseIfModelChanges<EntityDatabaseContext>());
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

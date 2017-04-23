@@ -9,9 +9,9 @@ namespace Pracuj.ath.bielsko.pl.ViewModels
     public enum AccountType
     {
         [Display(Name = "Student")]
-        Student,
+        Student = 1,
         [Display(Name = "Pracodawca")]
-        Employer
+        Employer = 2
     }
 
 
@@ -38,9 +38,14 @@ namespace Pracuj.ath.bielsko.pl.ViewModels
         [Required(ErrorMessage = "Wprowadz swoje nazwisko")]
         public string Surname { get; set; }
         [Display(Name = "Data urodzenia")]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime BirthDate { get; set; }
         [Display(Name = "Typ konta")]
         [Required(ErrorMessage = "Typ konta")]
+        [Range(1, 2, ErrorMessage = "Wybierz typ konta")]
         public AccountType AccountType { get; set; }
+        [Display(Name = "Numer albumu")]
+        public string AlbumNumber { get; set; }
     }
 }

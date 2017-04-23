@@ -18,6 +18,7 @@ namespace Pracuj.ath.bielsko.pl
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutofacConfig.Initialize();
+            AutomapperConfig.RegisterMaps();
         }
     }
 }

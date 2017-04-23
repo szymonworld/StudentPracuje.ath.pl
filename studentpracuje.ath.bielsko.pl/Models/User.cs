@@ -12,8 +12,7 @@ namespace Pracuj.Models
         public string Name { get; set; }
         public string Surname { get; set; }
         public DateTime BirthDate { get; set; }
-        [ForeignKey("Address")]
-        public int Address_Id { get; set; }
+        public int? Address_Id { get; set; }
         public Address Address { get; set; }
         public bool Verified { get; set; }
 

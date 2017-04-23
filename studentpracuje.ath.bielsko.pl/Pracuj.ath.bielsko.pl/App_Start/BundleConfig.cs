@@ -13,7 +13,11 @@ namespace Pracuj.ath.bielsko.pl
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*",
-                        "~/Scripts/jquery.unobtrusive*"));
+                        "~/Scripts/jquery.unobtrusive*",
+                        "~/Scripts/jquery-ui*"));
+
+            bundles.Add(new ScriptBundle("~/bundles/customscripts").Include(
+                        "~/Scripts/registerscripts.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -28,6 +32,9 @@ namespace Pracuj.ath.bielsko.pl
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/Styles.css"));
+
+            bundles.Add(new StyleBundle("~/Content/jquerycss").Include(
+                      "~/Content/themes/base/*.css"));
         }
     }
 }

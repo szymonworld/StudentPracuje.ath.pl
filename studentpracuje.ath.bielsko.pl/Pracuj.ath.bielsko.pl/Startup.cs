@@ -1,4 +1,6 @@
-﻿using Microsoft.Owin;
+﻿using Microsoft.AspNet.Identity;
+using Microsoft.Owin;
+using Microsoft.Owin.Security.Cookies;
 using Owin;
 using Pracuj.ath.bielsko.pl.App_Start;
 
@@ -9,7 +11,7 @@ namespace Pracuj.ath.bielsko.pl
     {
         public void Configuration(IAppBuilder app)
         {
-            
+
         }
     }
 }

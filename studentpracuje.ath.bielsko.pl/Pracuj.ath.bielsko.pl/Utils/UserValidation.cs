@@ -8,7 +8,6 @@ using System.Web;
 
 namespace Pracuj.ath.bielsko.pl.Utils
 {
-
     public enum RegistrationMsg
     {
         OK,
@@ -25,7 +24,6 @@ namespace Pracuj.ath.bielsko.pl.Utils
         TOO_YOUNG,
 
     }
-
 
     public class UserValidation
     {
@@ -61,7 +59,7 @@ namespace Pracuj.ath.bielsko.pl.Utils
             if (_user.Surname.Length < 1)
                 return RegistrationMsg.SURNAME_TOO_SHORT;
 
-            if (_user.BirthDate.AddYears(16) < DateTime.Now)
+            if (_user.BirthDate.AddYears(16) > DateTime.Now)
                 return RegistrationMsg.TOO_YOUNG;
 
             return RegistrationMsg.OK;

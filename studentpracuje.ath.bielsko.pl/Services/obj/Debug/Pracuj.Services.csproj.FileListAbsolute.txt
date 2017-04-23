@@ -27,3 +27,8 @@ C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bi
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Pracuj.Services.csprojResolveAssemblyReference.cache
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.dll
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.pdb
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\AutoMapper.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.dll
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\AutoMapper.xml
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.pdb
+C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.xml

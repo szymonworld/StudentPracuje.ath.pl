@@ -1,4 +1,4 @@
-﻿@if (Request.IsAuthenticated)
+﻿@if(User.Identity.IsAuthenticated)
 {
     <ul class="nav navbar-nav navbar-right">
         <li>@Html.ActionLink("Wyloguj", "Logoff", "Account", routeValues: null, htmlAttributes: new { id = "logoffLink" })</li>

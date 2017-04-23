@@ -23,6 +23,7 @@ namespace Pracuj.ath.bielsko.pl.App_Start
             builder.RegisterType<EntityDatabaseContext>().As<DbContext>().InstancePerDependency();
             builder.RegisterGeneric(typeof(RepositoryService<>)).As(typeof(IRepositoryService<>))
                 .InstancePerRequest();
+            builder.RegisterType<PasswordEncryptionService>().As<IPasswordEncryptionService>().InstancePerDependency();
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container)); 
         }

@@ -6,7 +6,6 @@ namespace Pracuj.Models
     public class CV : IEntity<int>
     {
         public int Id { get; set; }
-        [ForeignKey("Student")]
         public int Student_Id { get; set; }
         public virtual Student Student { get; set; }
         public string Photo { get; set; }
