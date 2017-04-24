@@ -32,3 +32,23 @@ C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bi
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\AutoMapper.xml
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.pdb
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Services.dll.config
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Services.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Services.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Autofac.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\AutoMapper.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.SqlServer.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Models.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Models.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Models.dll.config
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Autofac.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\AutoMapper.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.SqlServer.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Pracuj.Services.csprojResolveAssemblyReference.cache
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.pdb

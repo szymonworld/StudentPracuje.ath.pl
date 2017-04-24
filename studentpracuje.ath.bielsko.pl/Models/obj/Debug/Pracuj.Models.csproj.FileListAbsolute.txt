@@ -22,3 +22,15 @@ C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bi
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb

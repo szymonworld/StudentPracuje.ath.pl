@@ -8,10 +8,11 @@
 body {
     font-size: 15px;
     line-height: 1.52;
-    color: #717f86;
+    /*color: #717f86;*/
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    
 }
 
 ol, ul {
@@ -40,21 +41,21 @@ table {
 h1, h2, h3, h4, h5, h6 {
     font-family: Open Sans, sans-serif;
     font-weight: 700;
-    color: #4B4B4C;
+    color: #BABABA;
 }
 
 a {
-    color: #5fcf80;
+    color: #80B438;
 }
 
     a:hover, a:focus {
-        color: #5fcf80;
+        color: #80B438;
     }
 /***********************************
 Navigation bar
 ************************************/
 .navbar-default .navbar-brand {
-    color: #5FCF80;
+    color: #80B438;
 }
 
 .navbar-default {
@@ -78,35 +79,36 @@ Navigation bar
 }
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #5FCF80;
+    color: #80B438;
 }
 
 .navbar-nav .active a {
     background: none !important;
-    color: #5FCF80 !important;
+    color: #80B438 !important;
     outline: none;
 }
 
 .btn-trial a {
-    background-color: #5FCF80;
+    background-color: #80B438;
     border-radius: 25px;
     color: #ffffff !important;
-    border: 1px solid #5FCF80;
+    border: 1px solid #80B438;
 }
 
     .btn-trial a:hover, .btn-trial a:focus {
-        border: 1px solid #5FCF80;
+        border: 1px solid #80B438;
         background-color: #fff;
-        color: #5FCF80 !important;
+        color: #80B438 !important;
     }
 
 .navbar-default .navbar-brand {
-    font-family: 'Dosis', sans-serif !important;
+    /*font-family: 'Baloo Da', cursive;*/
+    /*text-shadow: 2px 0 0 #80B438, -2px 0 0 #80B438, 0 2px 0 #80B438, 0 -2px 0 #80B438, 1px 1px #80B438, -1px -1px 0 #80B438, 1px -1px 0 #80B438, -1px 1px 0 #80B438;   */
+    font-family: 'Dosis', sans-serif !important; 
     font-weight: 700;
-    text-transform: uppercase;
     padding: 0px;
     height: inherit;
-    font-size: 36px;
+    font-size: 32px;
     margin: 20px 0px;
 }
 
@@ -129,7 +131,7 @@ Navigation bar
 Banner
 ************************************/
 .banner {
-    background: url('../img/bg-banner.jpg') no-repeat center top;
+    background: url('themes/base/images/bg_Banner.jpg') no-repeat center;
     background-size: cover;
     min-height: 580px;
     position: relative;
@@ -149,7 +151,7 @@ Banner
 }
 
 .text-border {
-    border: 5px solid #5FCF80;
+    border: 5px solid #80B438;
     display: inline-block;
     margin-top: 150px;
 }
@@ -298,7 +300,7 @@ Banner
 }
 
 .quote .btn {
-    background-color: #5fcf80;
+    background-color: #80B438;
     color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -308,7 +310,7 @@ Banner
 
     .quote .btn:hover, .quote .btn:focus {
         background-color: #fff;
-        color: #5fcf80;
+        color: #80B438;
         border-color: #fff;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
@@ -342,7 +344,7 @@ h2 {
 
 .fea i {
     font-size: 39px;
-    color: #5FCF80;
+    color: #80B438;
     margin-top: 7px;
 }
 
@@ -366,7 +368,7 @@ h2 {
 }
 
 .orga-stru {
-    background-color: #5FCF80;
+    background-color: #80B438;
     width: 109px;
     height: auto;
     padding: 10px 10px 25px 10px;
@@ -404,7 +406,7 @@ h3.det-txt {
 }
 
 h4.sm-txt {
-    color: #5FCF80;
+    color: #80B438;
     font-size: 24px;
 }
 
@@ -439,7 +441,7 @@ Cta
     min-width: 280px;
     margin-left: -4px;
     margin-bottom: 2px;
-    border: 1px solid #5fcf80;
+    border: 1px solid #80B438;
     background-color: rgb(247, 247, 247);
     border-radius: 30px 0px 0px 30px;
 }
@@ -448,7 +450,7 @@ Cta
     font-size: 18px;
     text-transform: capitalize;
     color: #fff;
-    background-color: #5fcf80;
+    background-color: #80B438;
     border: 2px solid #fff;
     padding: 14px 30px;
     margin-left: -4px;
@@ -473,7 +475,7 @@ Work Shop
 }
 
 .icon-box i {
-    color: #5FCF80;
+    color: #80B438;
     font-size: 65px;
 }
 
@@ -541,11 +543,11 @@ Testimonial
 Course
 ************************************/
 [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
-    background-color: #5FCF80;
+    background-color: #80B438;
 }
 
 [class*=" imghvr-"], [class^="imghvr-"] {
-    background-color: #5FCF80;
+    background-color: #80B438;
     color: #fff;
 }
 /***********************************
@@ -595,7 +597,7 @@ Price Table
     padding: 20px 0px;
     font-weight: bold !important;
     font-size: 14px;
-    background-color: #5fcf80;
+    background-color: #80B438;
 }
 /***********************************
 Contact Us
@@ -723,7 +725,7 @@ Footer
     }
 
 .btn-submit:hover, .btn-submit:focus {
-    background-color: #5fcf80;
+    background-color: #80B438;
     color: #fff;
 }
 
@@ -731,7 +733,7 @@ Footer
     padding: 14px 12px;
     border-radius: 50px;
     text-transform: uppercase;
-    background-color: #5fcf80;
+    background-color: #80B438;
     color: #fff;
 }
 
@@ -788,7 +790,7 @@ Footer
 }
 
 .light-form-button {
-    background: #5fcf80;
+    background: #80B438;
     border: 1px solid rgba(119, 81, 81, 0.34);
     width: 24%;
     padding: 10px 10px;
@@ -804,7 +806,7 @@ Footer
 }
 
 .btn-green, .btn-green:hover {
-    background-color: #5fcf80;
+    background-color: #80B438;
     color: #fff;
 }
 
@@ -941,3 +943,138 @@ Responsive media queries
         text-align: center;
     }
 }
+
+
+/*To jest test */
+/** {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: helvetica;
+}
+
+a {
+    display: block;
+    color: #ad5482;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 40px;
+    text-align: center;
+}*/
+
+/*#bg {
+    position: relative;
+    top: 20px;
+    height: 600px;
+    width: 800px;
+    background: url('http://i.imgur.com/3eP9Z4O.png') center no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    border: #fff 15px solid;*/
+}
+
+/*.module {
+    position: relative;
+    top: 15%;
+    height: 70%;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    background: RGBA(255,255,255,1);
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .45);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, .45);
+}
+
+    .module ul {
+        list-style-type: none;
+        margin: 0;
+    }*/
+
+.tab {
+    float: left;
+    height: 60px;
+    width: 25%;
+    padding-top: 20px;
+    box-sizing: border-box;
+    background: #eeeeee;
+    text-align: center;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+    .tab:first-child {
+        -webkit-border-radius: 5px 0px 0px 0px;
+        border-radius: 5px 0px 0px 0px;
+    }
+
+    .tab:last-child {
+        -webkit-border-radius: 0px 5px 0px 0px;
+        border-radius: 0px 5px 0px 0px;
+    }
+
+    .tab:hover {
+        background-color: rgba(0,0,0,.1);
+    }
+
+.activeTab {
+    background: #fff;
+}
+
+    .activeTab .icon {
+        opacity: 1;
+    }
+
+.icon {
+    height: 24px;
+    width: 24px;
+    opacity: .2;
+}
+
+.form {
+    float: left;
+    height: 86%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.textbox {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 2px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+    .textbox:focus {
+        outline: none;
+        border: #80B438 2px solid;
+        color: #80B438;
+    }
+
+.button {
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    border: rgba(0,0,0,.3) 0px solid;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: #90c843;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12pt;
+    transition: background .4s;
+    cursor: pointer;
+}
+
+    .button:hover {
+        background: #80b438;
+    }
