@@ -16,6 +16,9 @@ namespace Pracuj.ath.bielsko.pl
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery-ui*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jquery")
+                        .Include("~/Scripts/jquery.unobtrusive.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/customscripts").Include(
                         "~/Scripts/registerscripts.js"));
 

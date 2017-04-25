@@ -1,30 +1,83 @@
-﻿
+﻿@model Pracuj.ath.bielsko.pl.ViewModels.FieldOfStudy
 @{
     ViewBag.Title = "Index";
 }
 
 @section Banner {
-<div class="banner">
-    <div class="bg-color">
-        <div class="container">
-            <div class="row">
-                <div class="banner-text text-center">
-                    <div class="text-border">
-                        <h2 class="text-dec">Szukasz pracy?</h2>
-                    </div>
-                    <div class="intro-para text-center quote">
-                        <p class="big-text">Skończyłes studia?</p>
-                        <p class="small-text">Zarejestruj się już dziś i znajdz swoją wymarzoną pracę!</p>
-                        <a href="#." class="btn">ZAREJESTRUJ</a>
-                    </div>
-                    @*<a href="#feature" class="mouse-hover"><div class="mouse"></div></a>*@
+    <div class="banner">
+        <div class="bg-color">
+            <div class="container">
+                <div class="row">
+                    <div class="banner-text text-center">
+                        <div class="text-border">
+                            <h2 class="text-dec">Szukasz pracy?</h2>
+                        </div>
+                        <div class="intro-para text-center quote">
+                            <p class="big-text">Skończyłes studia?</p>
+                            <p class="small-text">Zarejestruj się już dziś i znajdz swoją wymarzoną pracę!</p>
+                            <a href="#." class="btn">ZAREJESTRUJ</a>
+
+
+                            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                            <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+                            <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+                            <script type="text/javascript">
+                                $(document).ready(function () {
+                                    $("#Name").autocomplete({
+                                        source: function (request, response) {
+                                            $.ajax({
+                                                url: "/Home/Index",
+                                                type: "POST",
+                                                dataType: "json",
+                                                data: { Prefix: request.term },
+                                                success: function (data) {
+                                                    response($.map(data, function (item) {
+                                                        return { label: item.Name, value: item.Name };
+                                                    }))
+
+                                                }
+                                            })
+                                        },
+                                        messages: {
+                                            noResults: "", results: ""
+                                        }
+                                    });
+                                })
+                            </script>
+
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+                                <br>
+                                <div style="padding-bottom:15px; border: 5px solid #80B438; margin-bottom:50px;" class="input[type=search]:focus">
+                                    <h2 class="text-dec">Szukaj pracy</h2>
+                                    <div class="row" style="font-size: 10px;">
+                                            <div class="" style="padding-right: 0px; padding-left: 0px;">
+                                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "", @type = "search", @style = "font-size: 20px; max-width:200px;" } })
+                                                @Html.DropDownListFor(m => m.Name, new SelectList(
+                                                  new List<Object>{
+                                                       new { value = 0 , text = "Bielsko-Biała"  },
+                                                       new { value = 1 , text = "Kozy" },
+                                                       new { value = 2 , text = "Kęty"}
+                                                    },
+                                                  "value",
+                                                  "text",
+                                                   2), new { @class = "dropdown-toggle buttonSearch ", @type = "button", @style= "max-width:200px;" })
+                                                <input type="submit" value="Szukaj" class="buttonSearch buttonSearchLeft" style="max-width:120px;">
+                                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                            </div>                                
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                        @*<a href="#feature" class="mouse-hover"><div class="mouse"></div></a>*@
                     </div>
                 </div>
             </div>
         </div>
     </div>
 }
-
 @section Content {
-
 }
+
+

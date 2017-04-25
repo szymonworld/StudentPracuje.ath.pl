@@ -189,6 +189,7 @@
     <Compile Include="Startup.cs" />
     <Compile Include="Utils\MessageTranslator.cs" />
     <Compile Include="Utils\UserValidation.cs" />
+    <Compile Include="ViewModels\FieldOfStudy.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\RegisterViewModel.cs" />
   </ItemGroup>

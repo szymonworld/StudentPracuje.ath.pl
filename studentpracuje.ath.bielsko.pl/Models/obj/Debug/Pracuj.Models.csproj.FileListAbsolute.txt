@@ -31,6 +31,5 @@ I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
