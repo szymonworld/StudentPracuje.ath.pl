@@ -13,6 +13,10 @@ namespace Pracuj.ath.bielsko.pl.Controllers
         {
             return View();
         }
+        public ActionResult JobOffers()
+        {
+            return View();
+        }
         [HttpPost]
         public JsonResult Index(string Prefix)
         {

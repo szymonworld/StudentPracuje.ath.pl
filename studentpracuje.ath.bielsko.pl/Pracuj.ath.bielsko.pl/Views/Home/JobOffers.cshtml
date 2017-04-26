@@ -1,0 +1,160 @@
+﻿@*el Pracuj.Models.Job*@
+@model Pracuj.ath.bielsko.pl.ViewModels.FieldOfStudy
+
+@{
+    ViewBag.Title = "JobOffers";
+}
+
+<h2>JobOffers</h2>
+
+@section Content {
+
+<div class="container-fluid" style="padding-top:50px;">
+    <div class="row">
+        <div class="col-md-12">
+
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+            <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+            <script src="~/Scripts/AutoCompleteSearchbar.js"></script>
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+                <br>
+                <div style="padding:10px; padding-left:25px;" class="input[type=search]:focus">
+                    <div class="row text-center" style="font-size: 10px;">
+                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "", @type = "search", @style = "font-size: 20px; border: 2px solid #80b438 inset; " } })
+                            @Html.DropDownListFor(m => m.Name, new SelectList(
+                                                  new List<Object>{
+                                                       new { value = 0 , text = "Bielsko-Biała"  },
+                                                       new { value = 1 , text = "Kozy" },
+                                                       new { value = 2 , text = "Kęty"}
+                                                    },
+                                                  "value",
+                                                  "text",
+                                                   2), new { @class = "dropdown-toggle buttonSearch ", @type = "button", @style = "border: 2px solid #80b438;" })
+                            <input type="submit" value="Szukaj" class="button buttonSearchLeft" style="max-width:120px;">
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel-group" id="panel-136737">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-136737" href="#p1">Miejsce pracy</a>
+                    </div>
+                    <div id="p1" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            lista miast
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title collapsed" data-toggle="collapse"  data-parent="#panel-136737" href="#p2">Kategoria</a>
+                    </div>
+                    <div id="p2" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Kategorie
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-136737" href="#p3">Forma zatudnienia</a>
+                    </div>
+                    <div id="p3" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Kategorie
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-136737" href="#p4">Poziom stanowiska</a>
+                    </div>
+                    <div id="p4" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Kategorie
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-136737" href="#p5">Zarobki</a>
+                    </div>
+                    <div id="p5" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Kategorie
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <button type="button" class="btn btn-success btn-sm btn-block">
+                Filtruj
+            </button>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-rounded" />
+                        </div>
+                        <div class="col-md-7">
+                            <h2>
+                                Pomocnik budowy
+                            </h2>
+                            <p>
+                                Opis pracownika budowy
+                            </p>
+                            <p>
+                                <a class="btn" href="#">Czytaj »</a>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <h2>
+                                2017-04-26
+                            </h2>
+                            <p>
+                                Bielsko-Biała
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="pagination">
+                <li>
+                    <a href="#">Prev</a>
+                </li>
+                <li>
+                    <a href="#">1</a>
+                </li>
+                <li>
+                    <a href="#">2</a>
+                </li>
+                <li>
+                    <a href="#">3</a>
+                </li>
+                <li>
+                    <a href="#">4</a>
+                </li>
+                <li>
+                    <a href="#">5</a>
+                </li>
+                <li>
+                    <a href="#">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+}
+
