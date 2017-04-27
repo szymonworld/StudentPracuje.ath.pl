@@ -1,0 +1,23 @@
+﻿@model Pracuj.Models.CV
+
+@{
+    ViewBag.Title = "Editor";
+}
+
+<h2>Editor</h2>
+<br/>
+@section Content
+{
+
+
+<script src="~/Editor/ckeditor.js"></script>
+<script src="~/Editor/adapters/jquery.js"></script>
+
+<script>
+$(function () {
+    $('#my-textarea').ckeditor();
+});
+</script>
+<textarea id="my-textarea" style="padding-top:50px;"></textarea>
+    }
+
