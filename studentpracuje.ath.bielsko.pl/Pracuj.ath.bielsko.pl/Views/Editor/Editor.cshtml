@@ -1,5 +1,5 @@
-﻿@model Pracuj.Models.CV
-
+﻿
+@using Pracuj.ath.bielsko.pl.Helpers
 @{
     ViewBag.Title = "Editor";
 }
@@ -10,14 +10,8 @@
 {
 
 
-<script src="~/Editor/ckeditor.js"></script>
-<script src="~/Editor/adapters/jquery.js"></script>
+    @Html.TextEditor("elo")
 
-<script>
-$(function () {
-    $('#my-textarea').ckeditor();
-});
-</script>
-<textarea id="my-textarea" style="padding-top:50px;"></textarea>
+
     }
 

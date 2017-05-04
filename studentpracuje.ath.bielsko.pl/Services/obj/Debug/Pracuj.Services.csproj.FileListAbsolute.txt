@@ -71,3 +71,22 @@ C:\Users\Szymon\Downloads\StudentPracuje.ath.pl-master (1)\StudentPracuje.ath.pl
 C:\Users\Szymon\Downloads\StudentPracuje.ath.pl-master (1)\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Pracuj.Services.csprojResolveAssemblyReference.cache
 C:\Users\Szymon\Downloads\StudentPracuje.ath.pl-master (1)\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.dll
 C:\Users\Szymon\Downloads\StudentPracuje.ath.pl-master (1)\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.pdb
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Services.dll.config
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Services.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Services.pdb
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Autofac.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\AutoMapper.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Models.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Models.pdb
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\Autofac.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\AutoMapper.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.pdb
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\BCrypt.Net.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Pracuj.Services.csprojResolveAssemblyReference.cache
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Services\obj\Debug\Services.pdb

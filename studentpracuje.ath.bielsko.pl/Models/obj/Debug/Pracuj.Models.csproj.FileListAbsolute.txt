@@ -33,3 +33,15 @@ I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
