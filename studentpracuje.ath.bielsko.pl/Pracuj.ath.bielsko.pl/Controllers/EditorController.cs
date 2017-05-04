@@ -11,6 +11,7 @@ namespace Pracuj.ath.bielsko.pl.Controllers
         // GET: Editor
         public ActionResult Editor()
         {
+            ViewBag.Data = "<ol><li><h2><em><s><cite> lokiec pieta niema klienta </cite></s></em></h2></li></ol>";
             return View();
         }
         [HttpPost]

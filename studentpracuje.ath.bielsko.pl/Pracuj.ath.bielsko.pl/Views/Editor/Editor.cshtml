@@ -11,7 +11,7 @@
 
 @using (Html.BeginForm("Editor","Editor", FormMethod.Post, new { onsubmit = "updateAllMessageForms();" }))
 {
-    @Html.TextArea("text");
+    @Html.TextArea("text", ViewBag.Data as string);
     @Html.TextEditor("text")
 
     <input type="submit" value="Ogien" class="buttonSearch buttonSearchLeft" style="max-width:120px;" >
