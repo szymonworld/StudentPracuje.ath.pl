@@ -10,7 +10,7 @@ namespace Pracuj.ath.bielsko.pl.Helpers
     {
         public static MvcHtmlString TextEditor(this HtmlHelper helper, string target)
         {
-            return MvcHtmlString.Create("<script> $(function() { $('#" + target + "').ckeditor(); }); </script> <textarea id='" + target + "' style='padding-top:50px;'></textarea>");
+            return MvcHtmlString.Create("<script>CKEDITOR.replace('" + target + "'); </script> ");
         }
     }
 }

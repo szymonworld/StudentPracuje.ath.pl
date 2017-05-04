@@ -9,9 +9,13 @@
 @section Content
 {
 
+@using (Html.BeginForm("Editor","Editor", FormMethod.Post, new { onsubmit = "updateAllMessageForms();" }))
+{
+    @Html.TextArea("text");
+    @Html.TextEditor("text")
 
-    @Html.TextEditor("elo")
+    <input type="submit" value="Ogien" class="buttonSearch buttonSearchLeft" style="max-width:120px;" >
+}
 
-
-    }
+}
 

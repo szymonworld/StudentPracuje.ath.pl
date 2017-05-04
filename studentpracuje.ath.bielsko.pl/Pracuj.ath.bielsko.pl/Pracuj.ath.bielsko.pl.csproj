@@ -569,6 +569,7 @@
     <Content Include="Editor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
     <Content Include="Editor\skins\moono-lisa\readme.md" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
+    <Content Include="Scripts\editorscripts.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-1.12.4.min.js" />
     <Content Include="Scripts\jquery-1.12.4.min.map" />
