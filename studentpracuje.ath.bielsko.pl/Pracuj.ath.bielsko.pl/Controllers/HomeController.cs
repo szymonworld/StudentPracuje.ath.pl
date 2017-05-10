@@ -15,6 +15,15 @@ namespace Pracuj.ath.bielsko.pl.Controllers
         }
         public ActionResult JobOffers()
         {
+            List<OffertViewModel> Offerts = new List<OffertViewModel>();
+            Offerts.Add(new OffertViewModel { Id = 1, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
+            Offerts.Add(new OffertViewModel { Id = 2, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
+            Offerts.Add(new OffertViewModel { Id = 3, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
+            Offerts.Add(new OffertViewModel { Id = 4, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
+            Offerts.Add(new OffertViewModel { Id = 5, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
+            Offerts.Add(new OffertViewModel { Id = 6, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
+
+            ViewBag.Offerts = Offerts;
             return View();
         }
         [HttpPost]

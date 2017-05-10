@@ -405,3 +405,25 @@ C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.csprojResolveAssemblyReference.cache
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.dll
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\FluentValidation.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\FluentValidation.Mvc.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\FluentValidation.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\FluentValidation.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\FluentValidation.Mvc.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\cs\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\da\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\de\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\es\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\fa\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\fi\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\fr\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\it\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\ko\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\mk\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\nl\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\pl\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\pt\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\ru\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\sv\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\tr\FluentValidation.resources.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\zh-CN\FluentValidation.resources.dll

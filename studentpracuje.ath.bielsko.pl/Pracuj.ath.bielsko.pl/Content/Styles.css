@@ -59,7 +59,7 @@ Navigation bar
 }
 
 .navbar-default {
-    background-color: #ffffff;
+    background: linear-gradient(60deg, #FFFFFF, #DADADA);
 }
 
 .course-text {
@@ -1200,4 +1200,5 @@ input:-moz-placeholder {
 input::-webkit-input-placeholder {
     color: transparent;
 }
+
 

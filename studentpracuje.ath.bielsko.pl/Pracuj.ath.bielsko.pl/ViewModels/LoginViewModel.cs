@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -6,18 +7,23 @@ using System.Web;
 
 namespace Pracuj.ath.bielsko.pl.ViewModels
 {
+    [FluentValidation.Attributes.Validator(typeof(LoginValidation))]
     public class LoginViewModel
     {
         [Display(Name = "Login")]
-        [Required(ErrorMessage = "Wprowadz login")]
         [DataType(DataType.Text)]
-        [StringLength(30, MinimumLength = 2, ErrorMessage = "Login za krotki")]
         public string Login { get; set; }
-        [Display(Name = "Haslo")]
-        [Required(ErrorMessage = "Wprowadz hasło")]
+        [Display(Name = "Hasło")]
         [DataType(DataType.Text)]
-        [StringLength(255, MinimumLength = 6, ErrorMessage = "Haslo za krotkie")]
         public string Password { get; set; }
 
+    }
+    public class LoginValidation : AbstractValidator<LoginViewModel>
+    {
+        public LoginValidation()
+        {
+            RuleFor(x => x.Login).NotNull().WithMessage("Wprowadz login").Length(2, 30).WithMessage("Login za krotki");
+            RuleFor(x => x.Password).NotNull().WithMessage("Wprowadz Hasło").Length(6, 255).WithMessage("Hasło jest za krótkie");
+        }
     }
 }

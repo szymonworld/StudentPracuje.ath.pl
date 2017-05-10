@@ -100,34 +100,47 @@
             </button>
         </div>
         <div class="col-md-9">
-            <div class="row">
+
+            @foreach (var item in ViewBag.Offerts)
+            {
+            <div class="row panel panel-default">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-rounded" />
+                    <div class="row" style="background: linear-gradient(60deg, #FFFFFF, #EDEDED);">
+                        <div class="panel panel-default">
+                                <a class="" data-toggle="collapse" data-parent="#panel-136737" href="#@item.Id">
+                                    <div class="col-md-2">
+                                        <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-rounded" style="max-height:100px; padding:5px;" />
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h4 style="color:black;">
+                                            @item.Title
+                                        </h4>
+                                        <p>
+                                            @item.Company
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2" style="">
+                                        <p style="padding-top:10px;">
+                                            @item.PostedDate
+                                        </p>
+                                        <p>
+                                            @item.Location
+                                        </p>
+                                    </div>
+                                </a>
                         </div>
-                        <div class="col-md-7">
-                            <h2>
-                                Pomocnik budowy
-                            </h2>
-                            <p>
-                                Opis pracownika budowy
-                            </p>
-                            <p>
-                                <a class="btn" href="#">Czytaj »</a>
-                            </p>
                         </div>
-                        <div class="col-md-3">
-                            <h2>
-                                2017-04-26
-                            </h2>
-                            <p>
-                                Bielsko-Biała
-                            </p>
+                     <div id="@item.Id" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <div class="row">
+                                @item.Description
+                            </div>
+                            <button class="btn btn-success btn-block" style=" padding: 5px; ">Zobacz oferte</button>
                         </div>
                     </div>
                 </div>
             </div>
+            }
             <ul class="pagination">
                 <li>
                     <a href="#">Prev</a>

@@ -17,6 +17,7 @@ namespace Pracuj.ath.bielsko.pl
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            FluentValidation.Mvc.FluentValidationModelValidatorProvider.Configure();
             AutofacConfig.Initialize();
             AutomapperConfig.RegisterMaps();
         }

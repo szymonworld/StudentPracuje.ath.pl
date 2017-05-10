@@ -45,3 +45,4 @@ C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
