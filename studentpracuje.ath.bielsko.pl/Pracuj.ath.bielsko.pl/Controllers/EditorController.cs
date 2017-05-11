@@ -18,7 +18,7 @@ namespace Pracuj.ath.bielsko.pl.Controllers
         [ValidateInput(false)]
         public ActionResult Editor(string text)
         {
-            return View();
+            return View(text);
         }
     }
 }
