@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Pracuj.ath.bielsko.pl.ViewModels
 {
-    public class FieldOfStudy
+    public class FieldOfStudyViewModel
     {
         public string Name { get; set; }
     }

@@ -1,16 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Mvc.Html;
 
 namespace Pracuj.ath.bielsko.pl.Helpers
 {
     public static class EditorExtensions
     {
-        public static MvcHtmlString TextEditor(this HtmlHelper helper, string target)
+        public static MvcHtmlString CkEditor(this HtmlHelper htmlHelper, string name, string value, object htmlAttributes)
         {
-            return MvcHtmlString.Create("<script>CKEDITOR.replace('" + target + "'); </script> ");
+            var output = htmlHelper.TextArea(name, value, htmlAttributes).ToString();
+            output += string.Format("<script type=\"text/javascript\">$(document).ready(function(){{ $('#{0}').ckeditor(); }});</script>", name);
+
+            return MvcHtmlString.Create(output);
+        }
+
+        public static MvcHtmlString CkEditor(this HtmlHelper htmlHelper, string name, string value)
+        {
+            return htmlHelper.CkEditor(name, value, null);
+        }
+
+        public static MvcHtmlString CkEditorFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TProperty>> expression, object htmlAttributes) where TModel : class
+        {
+            ModelMetadata metadata = ModelMetadata.FromLambdaExpression(expression, htmlHelper.ViewData);
+            return htmlHelper.CkEditor(metadata.PropertyName, metadata.Model as string, htmlAttributes);
+        }
+
+        public static MvcHtmlString CkEditorFor<TModel, TProperty>(this HtmlHelper<TModel> htmlHelper, Expression<Func<TModel, TProperty>> expression) where TModel : class
+        {
+            return htmlHelper.CkEditorFor(expression, null);
         }
     }
 }

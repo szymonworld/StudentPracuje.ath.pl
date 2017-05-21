@@ -35,20 +35,20 @@ namespace Pracuj.ath.bielsko.pl.Controllers
             return Json(SelectedName, JsonRequestBehavior.AllowGet);
         }
         [HttpGet]
-        public List<FieldOfStudy> DefaultFieldOfStudy()
+        public List<FieldOfStudyViewModel> DefaultFieldOfStudy()
         {
-            List<FieldOfStudy> Def = new List<FieldOfStudy>()
+            List<FieldOfStudyViewModel> Def = new List<FieldOfStudyViewModel>()
             {
-                new FieldOfStudy {Name="Szymon" },
-                new FieldOfStudy {Name="Szymon" },
-                new FieldOfStudy {Name="Sławek" },
-                new FieldOfStudy {Name="Lolek" },
-                new FieldOfStudy {Name="Piotr" },
-                new FieldOfStudy {Name="Piotr" },
-                new FieldOfStudy {Name="Piotr" },
-                new FieldOfStudy {Name="Piotr" },
-                new FieldOfStudy {Name="Piotr" },
-                new FieldOfStudy {Name="Piotr" },
+                new FieldOfStudyViewModel {Name="Szymon" },
+                new FieldOfStudyViewModel {Name="Szymon" },
+                new FieldOfStudyViewModel {Name="Sławek" },
+                new FieldOfStudyViewModel {Name="Lolek" },
+                new FieldOfStudyViewModel {Name="Piotr" },
+                new FieldOfStudyViewModel {Name="Piotr" },
+                new FieldOfStudyViewModel {Name="Piotr" },
+                new FieldOfStudyViewModel {Name="Piotr" },
+                new FieldOfStudyViewModel {Name="Piotr" },
+                new FieldOfStudyViewModel {Name="Piotr" },
         };
             return Def;
         }

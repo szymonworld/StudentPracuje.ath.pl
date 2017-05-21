@@ -22,17 +22,6 @@ C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bi
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 C:\Users\ravan\OneDrive\Projekt_PZPP\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
@@ -45,7 +34,6 @@ C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 C:\Users\SW\Documents\Do testów\Programowanie\student pracuje\v3\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
-I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 C:\Users\SW\Documents\GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
 C:\Users\SW\Documents\GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
 C:\Users\SW\Documents\GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
@@ -58,3 +46,27 @@ C:\Users\SW\Documents\GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl
 C:\Users\SW\Documents\GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 C:\Users\SW\Documents\GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 C:\Users\SW\Documents\GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb

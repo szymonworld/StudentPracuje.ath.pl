@@ -186,6 +186,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AddJobOffertController.cs" />
     <Compile Include="Controllers\EditorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JobController.cs" />
@@ -198,7 +199,9 @@
     <Compile Include="Startup.cs" />
     <Compile Include="Utils\MessageTranslator.cs" />
     <Compile Include="Utils\UserValidation.cs" />
-    <Compile Include="ViewModels\FieldOfStudy.cs" />
+    <Compile Include="ViewModels\AddJobOffertViewModel.cs" />
+    <Compile Include="ViewModels\DropDownList\JobCategory.cs" />
+    <Compile Include="ViewModels\FieldOfStudyViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\OffertViewModel.cs" />
     <Compile Include="ViewModels\RegisterViewModel.cs" />
@@ -617,6 +620,7 @@
     <Content Include="Views\Editor\Editor.cshtml" />
     <Content Include="Views\Job\JobView.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Editor.cshtml" />
+    <Content Include="Views\AddJobOffert\AddJobOffert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

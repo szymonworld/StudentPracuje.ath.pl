@@ -1,0 +1,197 @@
+﻿@model Pracuj.ath.bielsko.pl.ViewModels.AddJobOffertViewModel
+@using Pracuj.ath.bielsko.pl.Helpers
+@{
+    ViewBag.Title = "AddJobOffert";
+}
+<h2>AddJobOffert</h2>
+
+@section Content {
+    <div class="container-fluid" style="margin-top:20px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 style="color:black;">Dodaj ogłoszenie o prace:</h2>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="margin-top:20px;">
+        <div class="row">
+            <div class="col-md-12">
+                @using (Html.BeginForm("AddJobOffert", "AddJobOffert"))
+                {
+                    @Html.AntiForgeryToken()
+                    <form class="form">
+                        <div class="page-header">
+                            <h4>Podstawowe informacje</h4>
+                        </div>
+                        <div class="form-horizontal">
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.Title, htmlAttributes: new { @class = "col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
+                                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.CompanyWebsite, htmlAttributes: new { @class = "col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.EditorFor(model => model.CompanyWebsite, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
+                                        @Html.ValidationMessageFor(model => model.CompanyWebsite, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.JobCategory, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.DropDownListFor(m => m.JobCategory, Model.JobCategory, "Wybierz", new { @class = "form-control textbox" })
+                                        @Html.ValidationMessageFor(model => model.JobCategory, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.ContractType, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.DropDownListFor(m => m.ContractType, Model.ContractType, "Wybierz", new { @class = "form-control textbox" })
+                                        @Html.ValidationMessageFor(model => model.ContractType, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.Salary, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.EditorFor(model => model.Salary, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
+                                        @Html.ValidationMessageFor(model => model.Salary, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.Experience, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.DropDownListFor(m => m.Experience, Model.Experience, "Wybierz", new { @class = "form-control textbox" })
+                                        @Html.ValidationMessageFor(model => model.Experience, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="page-header">
+                            <h4>Lokalizacja</h4>
+                        </div>
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.Country, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
+                                        @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.Region, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.EditorFor(model => model.Region, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
+                                        @Html.ValidationMessageFor(model => model.Region, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.City, htmlAttributes: new { @class = "col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-11">
+                                        @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
+                                        @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group ">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.Street, htmlAttributes: new { @class = "col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-11">
+                                        @Html.EditorFor(model => model.Street, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
+                                        @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="page-header">
+                            <h4>Dodatkowe</h4>
+                        </div>
+                        <div class="form-horizontal">
+
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.PostDuration, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.DropDownListFor(m => m.PostDuration, Model.PostDuration, "Wybierz", new { @class = "form-control textbox" })
+                                        @Html.ValidationMessageFor(model => model.PostDuration, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row col-lg-offset-1">
+                                    @Html.LabelFor(model => model.LvlOfEmployment, htmlAttributes: new { @class = " col-md-12" })
+                                </div>
+                                <div class="row col-lg-offset-1">
+                                    <div class="col-md-12">
+                                        @Html.DropDownListFor(m => m.LvlOfEmployment, Model.LvlOfEmployment, "Wybierz", new { @class = "form-control textbox" })
+                                        @Html.ValidationMessageFor(model => model.LvlOfEmployment, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="page-header">
+                            <h4>Opis</h4>
+                        </div>
+                        @Html.CkEditorFor(m => m.JobDescription, new { @class = "ckeditor" })
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-11">
+                                <input type="submit" value="Dodaj oferte" class="button" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-11">
+                                <span class="text-danger field-validation-error">@ViewBag.LoginError</span>
+                            </div>
+                        </div>
+                    </form>
+                }
+            </div>
+        </div>
+    </div>
+}
