@@ -4,116 +4,107 @@
     ViewBag.Title = "Register";
 }
 @section Banner{
+<div class="login-page page-header" filter-color="orange">
+    <div class="page-header-image" style="background-image:url(/Content/themes/images/1.jpg)"></div>
+    <div class="container">
+        <div class="col-md-4 content-center">
+            <div class="card card-login card-plain">
+                @using (Html.BeginForm("Register", "Account"))
+    {
+                    @Html.AntiForgeryToken()
+                    <form class="form">
+                        <div class="content">
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_circle-08"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.Login, new { @class = "form-control", @placeholder = "Login" })
 
-    <div class="banner">
-        <div class="bg-color">
-            <div class="container" style="padding-top:50px;">
-                <div class="row">
-                    <div class="banner-text">
-                        <h2 style="color:white">Rejestracja</h2>
-                        <h5 style="color:white">Jesteś o krok od pierwszej pracy! Do dzieła.</h5>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.Password, new { @placeholder = "Hasło", @class = "form-control" })
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_email-85"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "Email" })
 
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @placeholder = "Imie" })
 
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons users_single-02"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.Surname, new { @class = "form-control", @placeholder = "Nazwisko" })
 
-                        @using (Html.BeginForm("Register", "Account"))
-                        {
-                            @Html.AntiForgeryToken()
+                            </div>
+                            @Html.ValidationMessageFor(model => model.Surname, "", new { @class = "text-danger" })
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_calendar-60"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.BirthDate, "{0:yyyy-MM-dd}", new { @class = "form-control date-picker" })
 
-                            <form class="form">
-                                <div class="form-horizontal">
-                                    <hr />
-                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.Login, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px ; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "textbox" } })
-                                            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.BirthDate, "", new { @class = "text-danger" })
+                            <div class="input-group form-group-no-border input-lg" >
+                                <span class="input-group-addon" style="padding-right:10px;">
+                                    <i class="now-ui-icons travel_info"></i>
+                                </span>
+                                @Html.EnumDropDownListFor(model => model.AccountType, "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style= "width:inherit;  border-bottom-right-radius:30px;border-top-right-radius:30px;" })
 
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px ; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "textbox" } })
-                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.AccountType, "", new { @class = "text-danger" })
+                            <div class="input-group form-group-no-border input-lg" id="studentProp" style="display:none;">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons business_badge"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.AlbumNumber, new { @class = "form-control", @placeholder = "Numer Albumu" })
 
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "textbox" } })
-                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "textbox" } })
-                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.Surname, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EditorFor(model => model.Surname, new { htmlAttributes = new { @class = "textbox" } })
-                                            @Html.ValidationMessageFor(model => model.Surname, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.BirthDate, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EditorFor(model => model.BirthDate, "{0:yyyy-MM-dd}", new { htmlAttributes = new { @class = "textbox date-picker;" } })
-                                            @Html.ValidationMessageFor(model => model.BirthDate, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.AccountType, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EnumDropDownListFor(m => m.AccountType, "Wybierz typ", new { @class = "textbox" })
-                                            @Html.ValidationMessageFor(model => model.AccountType, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group" id="studentProp" style="display:none;">
-                                        @Html.LabelFor(model => model.AlbumNumber, htmlAttributes: new { @class = "control-label col-md-2", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-10">
-                                            @Html.EditorFor(model => model.AlbumNumber, new { htmlAttributes = new { @class = "textbox" } })
-                                            @Html.ValidationMessageFor(model => model.AlbumNumber, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-md-11">
-                                            <span class="text-danger field-validation-error">@ViewBag.ValidationError</span>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-md-offset-2 col-md-10">
-                                            <input type="submit" value="Zarejestruj" class="button" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        }
-                    </div>
-                </div>
+                            </div>
+                            @Html.ValidationMessageFor(model => model.AlbumNumber, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-11">
+                                <span class="text-danger field-validation-error">@ViewBag.ValidationError</span>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            <input type="submit" value="Rejestracja" class="btn btn-primary btn-round btn-lg btn-block" />
+                        </div>
+                        <div class="pull-left">
+                            <h6>
+                                @Html.ActionLink("Zaloguj się", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "link" })
+                            </h6>
+                        </div>
+                    </form>
+                }
             </div>
         </div>
     </div>
+</div>
+
+
 }
 @section Content {
-
 }
 
 @section Scripts {
     @Scripts.Render("~/bundles/customscripts")
     @Scripts.Render("~/bundles/jqueryval")
     @Styles.Render("~/Content/jquerycss")
-
 }

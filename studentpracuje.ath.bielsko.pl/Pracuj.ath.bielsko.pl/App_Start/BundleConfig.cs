@@ -9,7 +9,8 @@ namespace Pracuj.ath.bielsko.pl
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                        "~/Scripts/jquery-{version}.js"));
+                        "~/Scripts/jquery-{version}.js",
+                        "~/Scripts/jquery-{version}.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*",
@@ -29,15 +30,20 @@ namespace Pracuj.ath.bielsko.pl
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.js",
+                     "~/Scripts/moment.min.js",
+                        "~/Scripts/nouislider.min.js",
+                        "~/Scripts/now-ui-kit.js",
+                        "~/Scripts/bootstrap-datepicker.js",
+                        "~/Scripts/bootstrap-switch.js",
+                        "~/Scripts/tether.min.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
+                      "~/Content/bootstrap.min.css",
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/Content/Styles.css"));
-
-            bundles.Add(new StyleBundle("~/Content/jquerycss").Include(
-                      "~/Content/themes/base/*.css"));
+                      "~/Content/Styles.css",
+                      "~/Content/now-ui-kit.css"));
         }
     }
 }

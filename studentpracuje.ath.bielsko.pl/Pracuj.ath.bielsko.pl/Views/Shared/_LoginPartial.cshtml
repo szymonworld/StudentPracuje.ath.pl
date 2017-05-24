@@ -1,14 +1,14 @@
 ﻿@if(User.Identity.IsAuthenticated)
 {
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Wyloguj", "Logoff", "Account", routeValues: null, htmlAttributes: new { id = "logoffLink" })</li>
+        <li>@Html.ActionLink("Wyloguj", "Logoff", "Account", routeValues: null, htmlAttributes: new { id = "logoffLink", @class="nav-link" })</li>
     </ul>
 }
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Zaloguj", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-        <li>@Html.ActionLink("Zarejestruj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li>@Html.ActionLink("Zaloguj", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "nav-link" })</li>
+        <li>@Html.ActionLink("Zarejestruj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "nav-link" })</li>
     </ul>
 }
 

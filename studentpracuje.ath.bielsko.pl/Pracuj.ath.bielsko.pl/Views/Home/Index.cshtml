@@ -1,59 +1,55 @@
-﻿@model Pracuj.ath.bielsko.pl.ViewModels.FieldOfStudyViewModel
+﻿@model Pracuj.ath.bielsko.pl.ViewModels.RegisterViewModel
 @{
     ViewBag.Title = "Index";
 }
-
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src="~/Scripts/AutoCompleteSearchbar.js"></script>
 @section Banner {
-    <div class="banner">
-        <div class="bg-color">
-            <div class="container">
-                <div class="row">
-                    <div class="banner-text text-center">
-                        <div class="text-border">
-                            <h2 class="text-dec">Szukasz pracy?</h2>
-                        </div>
-                        <div class="intro-para text-center quote">
-                            <p class="big-text">Skończyłes studia?</p>
-                            <p class="small-text">Zarejestruj się już dziś i znajdz swoją wymarzoną pracę!</p>
-                            <a href="#." class="btn">ZAREJESTRUJ</a>
-
-
-                            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-                            <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-                            <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-                            <script src="~/Scripts/AutoCompleteSearchbar.js"></script>
-                            
-
-                            @using (Html.BeginForm())
-                            {
-                                @Html.AntiForgeryToken()
-                                <br>
-                                <div style="padding-bottom:15px; border: 5px solid #80B438; margin-bottom:50px;" class="input[type=search]:focus">
-                                    <h2 class="text-dec">Szukaj pracy</h2>
-                                    <div class="row" style="font-size: 10px;">
-                                            <div class="" style="padding-right: 0px; padding-left: 0px;">
-                                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "", @type = "search", @style = "font-size: 20px; max-width:200px;" } })
-                                                @Html.DropDownListFor(m => m.Name, new SelectList(
-                                                  new List<Object>{
-                                                       new { value = 0 , text = "Bielsko-Biała"  },
-                                                       new { value = 1 , text = "Kozy" },
-                                                       new { value = 2 , text = "Kęty"}
-                                                    },
-                                                  "value",
-                                                  "text",
-                                                   2), new { @class = "dropdown-toggle buttonSearch ", @type = "button", @style= "max-width:200px;" })
-                                                <input type="submit" value="Szukaj" class="buttonSearch buttonSearchLeft" style="max-width:120px;">
-                                                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-                                            </div>                                
-                                    </div>
+<div class="wrapper">
+    <div class="page-header clear-filter" filter-color="orange">
+        <div class="page-header-image" data-parallax="true" style="background-image: url(/Content/themes/images/bg_Banner.jpg">
+        </div>
+        <div class="container" style="padding-top:200px;">
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+            <div class="content-center brand">
+                <h1 class="h1-seo">Szukasz pracy?</h1>
+                <h3>Zarejestruj się już dziś i znajdz swoją wymarzoną pracę!</h3>
+                @Html.ActionLink("Rejestracja", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-default btn-round btn-lg" })
+            </div>
+                            <div class="row" style="border: 5px solid #F96332; padding:20px; margin-top:40px;">
+            @*<div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">*@
+                    <div class="col-md-12">
+                        <h3>Szukaj:</h3>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="input-group form-group-no-border input-lg">
+                                    <span class="input-group-addon">
+                                        <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                    </span>
+                                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "szukaj...", @style = "width: 100%" })
                                 </div>
-                            }
+                            </div>
+                            <div class="col-md-4">
+                                @Html.ActionLink("Szukaj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%", @class = "btn btn-primary btn-round btn-lg" })
+                            </div>
                         </div>
-                        @*<a href="#feature" class="mouse-hover"><div class="mouse"></div></a>*@
+                        <div class="row">
+                            <div class="col-md-6">
+                                @Html.EnumDropDownListFor(model => model.AccountType, "Wybierz typ", new { @class = "btn btn-primary", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%;" })
+                            </div>
+                            <div class="col-md-6">
+                                @Html.EnumDropDownListFor(model => model.AccountType, "Wybierz typ", new { @class = "btn btn-primary", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%;" })
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+}
         </div>
+    </div>
     </div>
 }
 @section Content {

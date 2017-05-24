@@ -1,173 +1,102 @@
 ﻿@*el Pracuj.Models.Job*@
-@model Pracuj.ath.bielsko.pl.ViewModels.FieldOfStudyViewModel
+@model Pracuj.ath.bielsko.pl.ViewModels.RegisterViewModel
 
 @{
     ViewBag.Title = "JobOffers";
 }
 
-<h2>JobOffers</h2>
+@section Banner
+{
+    <div class="wrapper">
+    <div class="page-header page-header-small">
+        <div class="page-header-image" data-parallax="false" style="background-image: url(/Content/themes/images/1.jpg);">
+        </div>
+        <div class="container">
+            <div class="content-center" style="padding-top:50px;">
+                <h1 class="title">Przeglądaj oferty pracy.</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+}
 
 @section Content {
 
-<div class="container-fluid" style="padding-top:50px;">
-    <div class="row">
-        <div class="col-md-12">
-
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-            <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-            <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-            <script src="~/Scripts/AutoCompleteSearchbar.js"></script>
-            @using (Html.BeginForm())
-            {
-                @Html.AntiForgeryToken()
-                <br>
-                <div style="padding:10px; padding-left:25px;" class="input[type=search]:focus">
-                    <div class="row text-center" style="font-size: 10px;">
-                            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "", @type = "search", @style = "font-size: 20px; border: 2px solid #80b438 inset; " } })
-                            @Html.DropDownListFor(m => m.Name, new SelectList(
-                                                  new List<Object>{
-                                                       new { value = 0 , text = "Bielsko-Biała"  },
-                                                       new { value = 1 , text = "Kozy" },
-                                                       new { value = 2 , text = "Kęty"}
-                                                    },
-                                                  "value",
-                                                  "text",
-                                                   2), new { @class = "dropdown-toggle buttonSearch ", @type = "button", @style = "border: 2px solid #80b438;" })
-                            <input type="submit" value="Szukaj" class="button buttonSearchLeft" style="max-width:120px;">
-                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <div class="panel-group" id="panel-136737">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="panel-title" data-toggle="collapse" data-parent="#panel-136737" href="#p1">Miejsce pracy</a>
-                    </div>
-                    <div id="p1" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            lista miast
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="panel-title collapsed" data-toggle="collapse"  data-parent="#panel-136737" href="#p2">Kategoria</a>
-                    </div>
-                    <div id="p2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Kategorie
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-136737" href="#p3">Forma zatudnienia</a>
-                    </div>
-                    <div id="p3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Kategorie
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-136737" href="#p4">Poziom stanowiska</a>
-                    </div>
-                    <div id="p4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Kategorie
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-136737" href="#p5">Zarobki</a>
-                    </div>
-                    <div id="p5" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Kategorie
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br/>
-            <button type="button" class="btn btn-success btn-sm btn-block">
-                Filtruj
-            </button>
-        </div>
-        <div class="col-md-9">
-
-            @foreach (var item in ViewBag.Offerts)
-            {
-            <div class="row panel panel-default">
+    <div class="container">
+        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
                 <div class="col-md-12">
-                    <div class="row" style="background: linear-gradient(60deg, #FFFFFF, #EDEDED);">
-                        <div class="panel panel-default">
-                                <a class="" data-toggle="collapse" data-parent="#panel-136737" href="#@item.Id">
-                                    <div class="col-md-2">
-                                        <img alt="Bootstrap Image Preview" src="http://lorempixel.com/140/140/" class="img-rounded" style="max-height:100px; padding:5px;" />
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h4 style="color:black;">
-                                            @item.Title
-                                        </h4>
-                                        <p>
-                                            @item.Company
-                                        </p>
-                                    </div>
-                                    <div class="col-md-2" style="">
-                                        <p style="padding-top:10px;">
-                                            @item.PostedDate
-                                        </p>
-                                        <p>
-                                            @item.Location
-                                        </p>
-                                    </div>
-                                </a>
-                        </div>
-                        </div>
-                     <div id="@item.Id" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            <div class="row">
-                                @item.Description
+                    <h3 style="color:white">Szukaj:</h3>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="input-group form-group-no-border input-lg">
+                                <span class="input-group-addon">
+                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
+                                </span>
+                                @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "szukaj...", @style = "width: 100%" })
                             </div>
-                            <button class="btn btn-success btn-block" style=" padding: 5px; ">Zobacz oferte</button>
+                        </div>
+                        <div class="col-md-4">
+                            @Html.ActionLink("Szukaj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%", @class = "btn btn-primary btn-simple btn-round btn-lg" })
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            @Html.EnumDropDownListFor(model => model.AccountType, "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
+                        </div>
+                        <div class="col-md-6">
+                            @Html.EnumDropDownListFor(model => model.AccountType, "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
                         </div>
                     </div>
                 </div>
             </div>
-            }
-            <ul class="pagination">
-                <li>
-                    <a href="#">Prev</a>
-                </li>
-                <li>
-                    <a href="#">1</a>
-                </li>
-                <li>
-                    <a href="#">2</a>
-                </li>
-                <li>
-                    <a href="#">3</a>
-                </li>
-                <li>
-                    <a href="#">4</a>
-                </li>
-                <li>
-                    <a href="#">5</a>
-                </li>
-                <li>
-                    <a href="#">Next</a>
-                </li>
-            </ul>
+
+            <div class="team">
+                <div class="row card primar"style="  padding:20px; margin-top:40px;">
+                    <div class="col-md-1">
+                        <div class="team-player text_align-center">
+                            <img src="~/Content/themes/images/apple.png" alt="Thumbnail Image" class="rounded img-fluid" style="max-height:90px;">
+                            <p class="" style="text-align:center;">Apple</p>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="team-player">
+                            @Html.ActionLink("Swift Senior Analyst Programmer", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%;text-align:left; font-size:20px;", @class = "btn btn-link btn-primary" })
+                            <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
+                                <span class="input-group-addon" style="padding:0px; padding-right:7px; background-color:white;">
+                                    <i class="now-ui-icons ui-2_settings-90" style="background-color:white;"></i>
+                                </span>
+                                <p style="background-color:white; margin-bottom:0px;">Programista</p>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg" style="margin-bottom:20px; padding:0px;">
+                                <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
+                                    <i class="now-ui-icons ui-1_calendar-60"></i>
+                                </span>
+                                <p style=" margin-bottom:0px;">Praca tymczasowa</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 ">
+                        <div class="team-player">
+                            <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:2px;">
+                                <span class="input-group-addon" style="padding:0px;background-color:white; padding-right:7px;">
+                                    <i class="now-ui-icons ui-2_time-alarm"></i>
+                                </span>
+                                <p style=" margin-bottom:0px;">01/01/0001</p>
+                            </div>
+                            <div class="input-group form-group-no-border input-lg" style="margin-bottom:20px; padding:2px;">
+                                <span class="input-group-addon" style="padding:0px;background-color:white; padding-right:7px;">
+                                    <i class="now-ui-icons location_pin"></i>
+                                </span>
+                                <p style=" margin-bottom:0px;">Dunaj</p>
+                            </div>
+                            @Html.ActionLink("Zobacz oferte", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%;text-align:left; font-size:20px;", @class = "btn btn-link btn-primary" })
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
 
 }
-

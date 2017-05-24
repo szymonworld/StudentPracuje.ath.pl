@@ -4,54 +4,42 @@
     ViewBag.Title = "Login";
 }
 @section Banner {
-    <div class="banner">
-        <div class="bg-color">
-            <div class="container" style="padding-top:50px;">
-                <div class="row">
-                    <div class="banner-text">
-                        <h2 style="color:white">Zaloguj się</h2>
-                        <h5 style="color:white">Korzystaj z pełnej oferty za darmo !</h5>
-
-                        @using (Html.BeginForm("Login", "Account"))
+    <div class="login-page page-header" filter-color="orange">
+        <div class="page-header-image" style="background-image:url(/Content/themes/images/7.jpg)"></div>
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                    @using (Html.BeginForm("Login", "Account"))
     {
-                            @Html.AntiForgeryToken()
-
-
-                            <form class="form">
-                                <div class="form-horizontal">
-                                    <hr />
-                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.Login, htmlAttributes: new { @class = "control-label col-md-1", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-11">
-                                            @Html.EditorFor(model => model.Login, new { htmlAttributes = new { @class = "textbox", placeholde = "Email" } })
-
-                                            @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-1", @style = "padding-top: 15px; color:rgb(255, 255, 255);" })
-                                        <div class="col-md-11">
-                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { placeholde = "Hasło", @class = "textbox" } })
-                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group">
-                                        <div class="col-md-offset-1 col-md-11">
-                                            <input type="submit" value="Zaloguj" class="button" />
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="col-md-offset-1 col-md-11">
-                                            <span class="text-danger field-validation-error">@ViewBag.LoginError</span>
-                                        </div>
-                                    </div>
+                        @Html.AntiForgeryToken()
+                        <form class="form">
+                            <div class="content">
+                                <div class="input-group form-group-no-border input-lg">
+                                    <span class="input-group-addon">
+                                        <i class="now-ui-icons users_circle-08"></i>
+                                    </span>
+                                    @Html.TextBoxFor(model => model.Login, new { @class = "form-control", @placeholder = "Email" })
+                                   
                                 </div>
-                            </form>
-                        }
-                    </div>
+                                @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                                <div class="input-group form-group-no-border input-lg">
+                                    <span class="input-group-addon">
+                                        <i class="now-ui-icons ui-1_lock-circle-open"></i>
+                                    </span>
+                                    @Html.TextBoxFor(model => model.Password, new { @placeholder = "Hasło", @class="form-control" })
+                                </div>
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="footer text-center">
+                                <input type="submit" value="Zaloguj" class="btn btn-primary btn-round btn-lg btn-block" />
+                            </div>
+                            <div class="pull-left">
+                                <h6>
+                                    @Html.ActionLink("Zarejestruj się", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "link" })
+                                </h6>
+                            </div>
+                        </form>
+                    }
                 </div>
             </div>
         </div>
