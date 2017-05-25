@@ -185,6 +185,8 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Company\CompanyAreaRegistration.cs" />
+    <Compile Include="Areas\Student\StudentAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AddJobOffertController.cs" />
     <Compile Include="Controllers\EditorController.cs" />
@@ -576,6 +578,8 @@
     <Content Include="fonts\nucleo-outline.ttf" />
     <Content Include="fonts\nucleo-outline.woff" />
     <Content Include="fonts\nucleo-outline.woff2" />
+    <Content Include="Areas\Student\Views\web.config" />
+    <Content Include="Areas\Company\Views\web.config" />
     <None Include="Scripts\jquery-1.12.4.intellisense.js" />
     <Content Include="Scripts\ButtonMoreLess.js" />
     <Content Include="Scripts\editorscripts.js" />
@@ -626,6 +630,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Company\Controllers\" />
+    <Folder Include="Areas\Company\Models\" />
+    <Folder Include="Areas\Company\Views\Shared\" />
+    <Folder Include="Areas\Student\Controllers\" />
+    <Folder Include="Areas\Student\Models\" />
+    <Folder Include="Areas\Student\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
