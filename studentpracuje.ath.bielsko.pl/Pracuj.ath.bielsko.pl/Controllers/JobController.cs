@@ -9,7 +9,7 @@ namespace Pracuj.ath.bielsko.pl.Controllers
     public class JobController : Controller
     {
         // GET: Job
-        public ActionResult Index()
+        public ActionResult JobView()
         {
             return View();
         }
