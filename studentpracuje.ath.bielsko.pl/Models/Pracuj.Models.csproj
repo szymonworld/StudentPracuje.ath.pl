@@ -53,11 +53,16 @@
   <ItemGroup>
     <Compile Include="Address.cs" />
     <Compile Include="Comment.cs" />
+    <Compile Include="ContractTypes.cs" />
     <Compile Include="CV.cs" />
     <Compile Include="Education.cs" />
     <Compile Include="Employer.cs" />
     <Compile Include="Experience.cs" />
+    <Compile Include="ExperienceTypes.cs" />
     <Compile Include="Job.cs" />
+    <Compile Include="JobCategories.cs" />
+    <Compile Include="LvlOfEmployment.cs" />
+    <Compile Include="PostDuration.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="User.cs" />
     <Compile Include="IEntity.cs" />

@@ -17,6 +17,8 @@ namespace Pracuj.ath.bielsko.pl.App_Start
                 cfg.CreateMap<RegisterViewModel, User>();
                 cfg.CreateMap<User, Student>();
                 cfg.CreateMap<User, Employer>();
+                cfg.CreateMap<AddJobOffertViewModel, Job>();
+                cfg.CreateMap<Job, AddJobOffertViewModel>();
             });
         }
     }

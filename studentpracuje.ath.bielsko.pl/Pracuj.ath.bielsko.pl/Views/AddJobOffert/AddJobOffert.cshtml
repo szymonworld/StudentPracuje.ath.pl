@@ -19,105 +19,113 @@
 }
 
 @section Content {
-
-    <div class="container">
-        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
-            <div class="col-md-12">
-                <h3 style="color:white">Podstawowe informacje:</h3>
-                <div class="row" style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", @placeholder = "Tytuł" } })
-                        @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="container">
+            <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+                <div class="col-md-12">
+                    <h3 style="color:white">Podstawowe informacje:</h3>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control", @placeholder = "Tytuł" } })
+                            @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-                <div class="row"style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.EditorFor(model => model.CompanyWebsite, new { htmlAttributes = new { @class = "form-control", @placeholder = "Strona WWW (opcjonalne)" } })
-                        @Html.ValidationMessageFor(model => model.CompanyWebsite, "", new { @class = "text-danger" })
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.CompanyName, new { htmlAttributes = new { @class = "form-control", @placeholder = "Nazwa firmy" } })
+                            @Html.ValidationMessageFor(model => model.CompanyName, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-                <div class="row"style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.DropDownListFor(m => m.JobCategory, Model.JobCategory, "Wybierz branże", new { @class = "form-control", @style= "background-color:rgb(249, 99, 50);" })
-                        @Html.ValidationMessageFor(model => model.JobCategory, "", new { @class = "text-danger" })
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.CompanyWebsite, new { htmlAttributes = new { @class = "form-control", @placeholder = "Strona WWW (opcjonalne)" } })
+                            @Html.ValidationMessageFor(model => model.CompanyWebsite, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-                <div class="row"style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.DropDownListFor(m => m.ContractType, Model.ContractType, "Wybierz forme zatrudnienia", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
-                        @Html.ValidationMessageFor(model => model.ContractType, "", new { @class = "text-danger" })
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.DropDownListFor(m => m.JobCategoryId, Model.JobCategory, "Wybierz branże", new { @class = "form-control", @style = "background-color:rgb(249, 99, 50);" })
+                            @Html.ValidationMessageFor(model => model.JobCategory, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-                <div class="row"style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.EditorFor(model => model.Salary, new { htmlAttributes = new { @class = "form-control", @placeholder = "Wynagrodzenie" } })
-                        @Html.ValidationMessageFor(model => model.Salary, "", new { @class = "text-danger" })
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.DropDownListFor(m => m.ContractTypeId, Model.ContractType, "Wybierz forme zatrudnienia", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
+                            @Html.ValidationMessageFor(model => model.ContractType, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-                <div class="row"style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.DropDownListFor(m => m.Experience, Model.Experience, "Wybierz wymagane doświadczenie", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
-                        @Html.ValidationMessageFor(model => model.Experience, "", new { @class = "text-danger" })
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.Salary, new { htmlAttributes = new { @class = "form-control", @placeholder = "Wynagrodzenie" } })
+                            @Html.ValidationMessageFor(model => model.Salary, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
-            <div class="col-md-12">
-                <h3 style="color:white">Lokalizacja:</h3>
-                <div class="row" style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @class = "form-control", @placeholder = "Kraj" } })
-                        @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="row" style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.EditorFor(model => model.Region, new { htmlAttributes = new { @class = "form-control", @placeholder = "Region" } })
-                        @Html.ValidationMessageFor(model => model.Region, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="row" style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control", @placeholder = "Miasto" } })
-                        @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
-                    </div>
-                </div>
-                <div class="row" style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.EditorFor(model => model.Street, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ulica" } })
-                        @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.DropDownListFor(m => m.ExperienceId, Model.Experience, "Wybierz wymagane doświadczenie", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
+                            @Html.ValidationMessageFor(model => model.Experience, "", new { @class = "text-danger" })
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
-            <div class="col-md-12">
-                <h3 style="color:white">Dodatkowe:</h3>
-                <div class="row" style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.DropDownListFor(m => m.PostDuration, Model.PostDuration, "Wybierz czas trwania oferty", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
-                        @Html.ValidationMessageFor(model => model.PostDuration, "", new { @class = "text-danger" })
+            <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+                <div class="col-md-12">
+                    <h3 style="color:white">Lokalizacja:</h3>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.Country, new { htmlAttributes = new { @class = "form-control", @placeholder = "Kraj" } })
+                            @Html.ValidationMessageFor(model => model.Country, "", new { @class = "text-danger" })
+                        </div>
                     </div>
-                </div>
-                <div class="row" style="padding-bottom:10px;">
-                    <div class="col-md-6">
-                        @Html.DropDownListFor(m => m.LvlOfEmployment, Model.LvlOfEmployment, "Wybierz poziom zatrudnienia", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
-                        @Html.ValidationMessageFor(model => model.LvlOfEmployment, "", new { @class = "text-danger" })
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.Region, new { htmlAttributes = new { @class = "form-control", @placeholder = "Region" } })
+                            @Html.ValidationMessageFor(model => model.Region, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control", @placeholder = "Miasto" } })
+                            @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.EditorFor(model => model.Street, new { htmlAttributes = new { @class = "form-control", @placeholder = "Ulica" } })
+                            @Html.ValidationMessageFor(model => model.Street, "", new { @class = "text-danger" })
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
-            <div class="col-md-12">
-                <h3 style="color:white">Opis:</h3>
-                        @Html.CkEditorFor(m => m.JobDescription, new { @class = "ckeditor", @style= "width:100%;" })
+            <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+                <div class="col-md-12">
+                    <h3 style="color:white">Dodatkowe:</h3>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.DropDownListFor(m => m.PostDurationId, Model.PostDuration, "Wybierz czas trwania oferty", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
+                            @Html.ValidationMessageFor(model => model.PostDuration, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom:10px;">
+                        <div class="col-md-6">
+                            @Html.DropDownListFor(m => m.LvlOfEmploymentId, Model.LvlOfEmployment, "Wybierz poziom zatrudnienia", new { @class = "form-control textbox", @style = "background-color:rgb(249, 99, 50);" })
+                            @Html.ValidationMessageFor(model => model.LvlOfEmployment, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+                <div class="col-md-12">
+                    <h3 style="color:white">Opis:</h3>
+                    @Html.CkEditorFor(m => m.JobDescription, new { @class = "ckeditor", @style = "width:100%;" })
+                </div>
+            </div>
+
+            <input type="submit" value="Dodaj oferte" class="btn btn-primary btn-round btn-lg" />
+
         </div>
-        @Html.ActionLink("Dodaj oferte", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary btn-round btn-lg" })
 
-
-    </div>
-
-
+    }
 }

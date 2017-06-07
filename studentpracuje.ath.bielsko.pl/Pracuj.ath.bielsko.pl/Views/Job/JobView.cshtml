@@ -1,10 +1,8 @@
-﻿
+﻿@model Pracuj.Models.Job
 @{
     ViewBag.Title = "JobView";
 }
-
 <h2>JobView</h2>
-
 
 @section Banner
 {
@@ -21,16 +19,11 @@
     </div>
 }
 
-
 @section Content {
-
-    @{
-        string text = "<style type=\"text/css\">.text {    padding: 20px 50px 10px;  color: #31ac53;}    </style><div id=\"offCont\" class=\"o-main__left_table uploaded\"> <table id=\"offTable\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td><div id=\"main\"><div id=\"top\"><img src=\"https://www.pracuj.pl/L/218295/_res/top1.png\"></div><div id=\"text\"><div id=\"jobTitle\"><span style=\"font-size:18pt;\"><strong>Senior Software Tester/Developer</strong></span></div></div><div id=\"description\"><div class=\"r\"><div style=\"background:url('https://www.pracuj.pl//L/218295/_res/i1.png') no-repeat left top;padding:20px 50px 50px 110px;margin-left:10px;min-height:90px;\"><div style=\"text-align:justify;\">We are now looking for an experienced SW developer to join our RNC development team.</div><div style=\"text-align:justify;\">&nbsp;</div><div style=\"text-align:justify;\">The work includes SW development, System architecture evolution, System integration and much more. We are looking for a person with either experience in developing and maintaining RNC products or with knowledge in the area of WCMDA technologies, who has innovative skills and can take on responsibility for the E2E product deliveries and performance.</div><p>&nbsp;</p><p><strong>Responsibilities and authorities:</strong></p><ul><li>Responsible to produce and document high quality software products from inception to delivery.</li><li>Active in proposing changes to the product solutions, improving and extending scope of deliverables.</li><li>Perform analysis, design, troubleshooting, verification, demonstration and maintenance of these products in a process driven, team environment.</li><li>Responsible for multi-functional areas, applications or sub-systems.</li><li>Actively involved in the establishment and development of software design environment.</li><li>Supports sales, services, product deployment and product management with technical issues, if needed.</li></ul></div></div><div class=\"s\"><div style=\"background:url('https://www.pracuj.pl/L/218295/_res/i2.png') no-repeat left top;padding:20px 50px 30px 110px;margin-left:80px;min-height:90px;\"><p><strong>Requirements for the position:</strong></p><ul><li>Bachelor or Master degree in computer science, information technology, telecommunication or related area.</li><li>Strong in Mobile Radio Technology. Nice to have knowledge of RNC products, both SW and HW.</li><li>Excellent knowledge in C/C++ or other programming language (with willingness to work in C/C++).</li><li>Hands on in scripting languages.</li><li>Fluent in English.</li><li>A good team player with strong willingness to support team members, and with good communications skills.</li></ul></div></div><div class=\"t\"><div style=\"background:url('https://www.pracuj.pl/L/218295/_res/i3.png') no-repeat left top;padding:20px 50px 30px 110px;margin-left:10px;min-height:90px;\"><p><strong><br>We offer:</strong></p><ul><li><strong>stable employment</strong>&nbsp;on the basis of an employment contract,</li><li>work based on<strong> developing the latest solutions </strong>in the area of mobile technology,</li><li>opportunity for&nbsp;<strong>professional development</strong>&nbsp;(clearly defined career paths, training)</li><li><strong>rich benefit package</strong>&nbsp;(including life insurance, private medical care, cultural and sports package, regular social events),</li><li>basic&nbsp;<strong>work tools</strong>&nbsp;(laptop, mobile phone),</li><li>work in an&nbsp;<strong>international environment</strong> based on&nbsp;<strong>cooperation</strong>,</li><li>the possibility of cooperation with the&nbsp;<strong>leading providers</strong>&nbsp;of telecommunications services,</li><li><strong>atmosphere</strong>&nbsp;based on&nbsp;<strong>cooperation</strong>,</li><li><strong>work &ndash; life balance, individual approach</strong>&nbsp;to every employee,</li><li>opportunity to&nbsp;<strong>develop one�s passions</strong>&nbsp;within groups of interests (e.g. Society of Cyclists, Amateur Photography Group, Mountain Club).</li></ul><p>&nbsp;</p></div></div></div><div style=\"text-align:right;margin-bottom:10px;margin-right:50px;margin-top:-20px;border:0;\"><a rel=\"nofollow\" href=\"https://www.facebook.com/karierawericsson/\"><img src=\"https://www.pracuj.pl/L/218295/_res/s3.jpg\"></a><a rel=\"nofollow\" href=\"https://twitter.com/ericssoncareers\"><img src=\"https://www.pracuj.pl/L/218295/_res/s1.jpg\"></a><a rel=\"nofollow\" href=\"https://www.youtube.com/playlist?list=PLsn61Zheh8ij8on-9-lpo2LvGedsiE0Ff\"><img src=\"https://www.pracuj.pl/L/218295/_res/s2.jpg\"></a></div><div id=\"contact\"><p style=\"text-align:center;\" align=\"center\"><strong><br>If your interested in our offer, please apply via button APLIKUJ TERAZ<br></strong></p><div id=\"clause\"><p style=\"text-align:center;\"><span style=\"font-size:8pt;\">Please include the following statement:</span></p><p style=\"text-align:justify;\"><span style=\"font-size:8pt;\">Wyra�am zgod� na przetwarzanie moich danych osobowych dla potrzeb obecnego jak i przysz�ych proces�w rekrutacji, prowadzonych przez Ericsson zgodnie z postanowieniami ustawy z 29 sierpnia 1997 r. o ochronie danych osobowych (t.j. Dz. U. z 2002 r., nr. 101, poz. 926 ze zm.).</span></p></div></div></div></td> </tr> </tbody> </table> </div>";
-    }
     <div class="container-fluid" style="padding-top:25px">
         <div class="row">
             <div class="col-md-8">
-                @Html.Raw(text)
+                @Html.Raw(Model.Description)
                 @Html.ActionLink("Aplikuj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary btn-round btn-sl btn-block" })
             </div>
             <div class="col-md-4">
@@ -43,7 +36,7 @@
                                 </div>
                                 <div class="col-md-8" style="padding-top:5px; padding-left:5px; padding-bottom:5px">
                                     <h4 style="margin-top:5px; margin-bottom:5px">
-                                        LSI Software S.A.
+                                        @Model.CompanyName
                                     </h4>
                                     <p>
                                         Więcej informacji o pracodawcy
@@ -53,46 +46,44 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="team-player">
                     <div class="list-group row card primar">
 
-                        <h5 class="list-group-item list-group-item-info">Software Developer</h5>
-                            <div class="list-group-item">
-                                <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
-                                    <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
-                                        <i class="now-ui-icons location_pin"></i>
-                                    </span>
-                                    <p style=" margin-bottom:0px; margin-left:5px;">Bielsko - Biała</p>
-                                </div>
+                        <h5 class="list-group-item list-group-item-info">@Model.Title</h5>
+                        <div class="list-group-item">
+                            <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
+                                <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
+                                    <i class="now-ui-icons location_pin"></i>
+                                </span>
+                                <p style=" margin-bottom:0px; margin-left:5px;">@Model.City</p>
                             </div>
-                            <div class="list-group-item">
-                                <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
-                                    <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
-                                        <i class="now-ui-icons education_paper"></i>
-                                    </span>
-                                    <p style=" margin-bottom:0px; margin-left:5px;">Automatyka i robotyka</p>
-                                </div>
-                            </div>
-                            <div class="list-group-item">
-                                <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
-                                    <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
-                                        <i class="now-ui-icons ui-2_time-alarm"></i>
-                                    </span>
-                                    <p style=" margin-bottom:0px; margin-left:5px;">Ważne jeszcze 5 dni</p>
-                                </div>
-                            </div>
-
-                            <a href="#" class="btn btn-primary btn-lg btn-block">Aplikuj</a>
                         </div>
+                        <div class="list-group-item">
+                            <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
+                                <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
+                                    <i class="now-ui-icons education_paper"></i>
+                                </span>
+                                <p style=" margin-bottom:0px; margin-left:5px;">@Model.JobCategory</p>
+                            </div>
+                        </div>
+                        <div class="list-group-item">
+                            <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
+                                <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
+                                    <i class="now-ui-icons ui-2_time-alarm"></i>
+                                </span>
+                                <p style=" margin-bottom:0px; margin-left:5px;"></p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary btn-lg btn-block">Aplikuj</a>
+                    </div>
                 </div>
                 <p style="margin-right:25px;">Pracodawca ma prawo zakończyć rekrutację we wcześniejszym terminie.</p>
-                </div>
+            </div>
         </div>
     </div>
-
     @*http://stackoverflow.com/questions/2122424/is-it-possible-to-create-a-custom-asp-net-mvc-strongly-typed-html-helper*@
     @*@Html.EditorFor(m=>m.Description, "Editor" );*@
-
 
 }

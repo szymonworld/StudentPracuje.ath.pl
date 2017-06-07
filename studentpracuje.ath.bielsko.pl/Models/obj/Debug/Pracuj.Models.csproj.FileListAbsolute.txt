@@ -82,3 +82,15 @@ C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko
 C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+D:\asdfds\StudentPracuje.ath.pl-master\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb

@@ -1,57 +1,56 @@
 ﻿@using PagedList.Mvc
 @using Pracuj.ath.bielsko.pl.ViewModels
 @model PagedList.IPagedList<Pracuj.ath.bielsko.pl.ViewModels.OffertViewModel>
-
-    @{
-        ViewBag.Title = "JobOffers";
-    }
-
-    @section Banner
+@{
+    ViewBag.Title = "JobOffers";
+}
+@section Banner
 {
-        <div class="wrapper">
-            <div class="page-header page-header-small">
-                <div class="page-header-image" data-parallax="false" style="background-image: url(/Content/themes/images/1.jpg);">
+    <div class="wrapper">
+        <div class="page-header page-header-small">
+            <div class="page-header-image" data-parallax="false" style="background-image: url(/Content/themes/images/1.jpg);">
+            </div>
+            <div class="container">
+                <div class="content-center" style="padding-top:50px;">
+                    <h1 class="title">Przeglądaj oferty pracy.</h1>
                 </div>
-                <div class="container">
-                    <div class="content-center" style="padding-top:50px;">
-                        <h1 class="title">Przeglądaj oferty pracy.</h1>
+            </div>
+        </div>
+    </div>
+}
+@section Content {
+    <div class="container">
+        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+            <div class="col-md-12">
+                <h3 style="color:white">Szukaj:</h3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="input-group form-group-no-border input-lg">
+                            <span class="input-group-addon">
+                                <i class="now-ui-icons ui-1_zoom-bold"></i>
+                            </span>
+                            @Html.TextBox("ssd", "", new { @class = "form-control", @placeholder = "szukaj...", @style = "width: 100%" })
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        @Html.ActionLink("Szukaj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%", @class = "btn btn-primary btn-simple btn-round btn-lg" })
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        @Html.TextBox("dd", "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
+                    </div>
+                    <div class="col-md-6">
+                        @Html.TextBox("dd", "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
                     </div>
                 </div>
             </div>
         </div>
-    }
-
-    @section Content {
-
-        <div class="container">
-            <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
-                <div class="col-md-12">
-                    <h3 style="color:white">Szukaj:</h3>
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="input-group form-group-no-border input-lg">
-                                <span class="input-group-addon">
-                                    <i class="now-ui-icons ui-1_zoom-bold"></i>
-                                </span>
-                                @Html.TextBox("ssd", "", new { @class = "form-control", @placeholder = "szukaj...", @style = "width: 100%" })
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            @Html.ActionLink("Szukaj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%", @class = "btn btn-primary btn-simple btn-round btn-lg" })
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            @Html.TextBox("dd", "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
-                        </div>
-                        <div class="col-md-6">
-                            @Html.TextBox("dd", "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
-                        </div>
-                    </div>
-                </div>
-            </div>
-            @foreach (var item in Model)
+        @foreach (var item in Model)
+        {
+            using (Html.BeginForm("JobView", "Job", FormMethod.Post))
             {
+                @Html.AntiForgeryToken()
                 <div class="team">
                     <div class="row card primar" style="  padding:20px; margin-top:0px;">
                         <div class="col-md-1">
@@ -64,9 +63,9 @@
                         </div>
                         <div class="col-md-9">
                             <div class="team-player">
-                                <a href="@Url.Action("JobView", "Job")">
-                                    <p class="btn btn-link btn-primary" style="width: 100%;text-align:left; font-size:20px;">@item.Title</p>
-                                </a>
+
+                                <p class="btn btn-link btn-primary" style="width: 100%;text-align:left; font-size:20px;">@item.Title</p>
+
                                 <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
                                     <span class="input-group-addon" style="padding:0px; padding-right:7px; background-color:white;">
                                         <i class="now-ui-icons ui-2_settings-90" style="background-color:white;"></i>
@@ -95,26 +94,23 @@
                                     </span>
                                     <p style=" margin-bottom:0px;">@item.Location</p>
                                 </div>
-                                @Html.ActionLink("Zobacz oferte", "JobView", "Job", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%;text-align:left; font-size:20px;", @class = "btn btn-link btn-primary" })
-
-
+                                @Html.Hidden("id", @item.Id)
+                                <input type="submit" value="Zobacz oferte" class="btn btn-link btn-primary" style="width: 100%;text-align:left; font-size:20px;" />
                             </div>
                         </div>
                     </div>
                 </div>
             }
-            <div class="col-md-12">
-
-                <div class="justify-content-center">
-                    <ul class="pagination pagination-primary">
-                        <a href="" class="page-item">
-                            @Html.PagedListPager(Model, page => Url.Action("JobOffers", new { page, pageSize = Model.PageSize, @class = "page-link", @style = "padding:10px;" }))
-                        </a>
-                    </ul>
-                </div>
+        }
+        <div class="col-md-12">
+            <div class="justify-content-center">
+                <ul class="pagination pagination-primary">
+                    <a href="" class="page-item">
+                        @Html.PagedListPager(Model, page => Url.Action("JobOffers", new { page, pageSize = Model.PageSize, @class = "page-link", @style = "padding:10px;" }))
+                    </a>
+                </ul>
             </div>
-
         </div>
+    </div>
 
-
-    }
+}

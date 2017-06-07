@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "AddJobConfirmation";
+}
+@section Banner
+{
+    <div class="wrapper">
+        <div class="page-header page-header-image">
+            <div class="page-header-image" data-parallax="false" style="background-image: url(/Content/themes/images/2.jpg);">
+            </div>
+            <div class="container">
+                <div class="content-center" style="padding-top:50px;">
+                    <h1 class="title">Oferta została pomyślnie dodana do systemu jednakże administrator musi potwierdzić ofertę.</h1>
+
+                    <div class="col-md-12">
+                        @Html.ActionLink("Szukaj ofert pracy", "JobOffers", "Home", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary btn-round btn-sl btn-block" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+@section Content{
+}
+
+

@@ -659,6 +659,7 @@
     <Content Include="Views\Shared\SearchBar.cshtml" />
     <Content Include="Views\CVEditor\CVEditor.cshtml" />
     <Content Include="Views\Job\JobManagement.cshtml" />
+    <Content Include="Views\AddJobOffert\AddJobConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
