@@ -70,3 +70,15 @@ J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\b
 J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
 J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
 J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll.config
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.dll
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Models.pdb
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.dll
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.dll
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\Autofac.xml
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.xml
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Pracuj.Models.csprojResolveAssemblyReference.cache
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.dll
+C:\Users\SW\Documents\GitHub\v2\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Models\obj\Debug\Models.pdb

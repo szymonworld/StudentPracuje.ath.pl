@@ -1,0 +1,402 @@
+﻿@model Pracuj.ath.bielsko.pl.ViewModels.RegisterViewModel
+
+@{
+    ViewBag.Title = "JobManagement";
+}
+
+@section Banner
+{
+    <div class="wrapper">
+        <div class="page-header page-header-small">
+            <div class="page-header-image" data-parallax="false" style="background-image: url(/Content/themes/images/2.jpg);">
+            </div>
+            <div class="container">
+                <div class="content-center" style="padding-top:50px;">
+                    <h1 class="title">Zarządzaj własnymi oferty.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Content {
+
+    <div class="container">
+        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+            <div class="col-md-12">
+                <h3 style="color:white">Przeszukaj swoje oferty:</h3>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="input-group form-group-no-border input-lg">
+                            <span class="input-group-addon">
+                                <i class="now-ui-icons ui-1_zoom-bold"></i>
+                            </span>
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "szukaj...", @style = "width: 100%" })
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        @Html.ActionLink("Szukaj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%", @class = "btn btn-primary btn-simple btn-round btn-lg" })
+                    </div>
+                </div>
+                <div class="row">
+                    @Html.ActionLink("Dodaj nową ofertę", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%", @class = "btn btn-primary btn-simple btn-round btn-lg" })
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <div class="row card primar" style="padding:0px; margin-bottom:0px; margin-top:40px;">
+                <ul class="event-list">
+                    <li>
+                        <time2 class="tttt" datetime="2014-07-20">
+                            <span class="number">4</span>
+                            <span class="signature">Aplikacje</span>
+                        </time2>
+                        <div class="info">
+                            <h2 class="title">Junior Customer Support Specialist </h2>
+                            <p class="desc">Łódź, łódzkie | Praca Stała | Ważna jeszcze 14 dni (do 21.06.2017)</p>
+                            <ul>
+                                <li style="width:50%;"><a data-toggle="collapse" data-target="#feature-3"><span class="fa fa-arrow-down"></span> Kandydaci</a></li>
+                                <li style="width:44%;"><span class="fa fa-pencil"></span> Edytuj</li>
+                                <li style="width:4%;"></li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li class="promote" style="width:33%;"><a href="#promuj"><span class="fa fa-usd"></span></a></li>
+                                <li class="refresh" style="width:34%;"><a href="#odnow"><span class="fa fa-refresh"></span></a></li>
+                                <li class="end" style="width:33%;"><a href="#zakoncz"><span class="fa fa-times"></span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="feature-3" class="collapse team">
+            <div class="row card primar" style="padding:0px; margin-top:0px;">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Wyczesany Marek
+                                                <span class="pull-right pagado">(Status - Student ATH)</span>
+                                            </h4>
+                                            <p class="summary">Ukończyłęm ATH i jestem bezrobotny...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://pickaface.net/gallery/avatar/Opi51c7dccf270e0.png" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Krupa Mirosław
+                                                <span class="pull-right pagado">(Status studenta - VIP RESET MEMBER)</span>
+                                            </h4>
+                                            <p class="summary">Ambitny student przyjmie każdą pracę...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlXyFZc3Z5mMJZKoAhPSlkXtESdbCMbhJGNIc0TCGTEHZda4GZ" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Bubel Renata
+                                                <span class="pull-right pagado">(Status)</span>
+                                            </h4>
+                                            <p class="summary">Studentka gotowa do pracy od września...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Potęga Teofil
+                                                <span class="pull-right pendiente">(Status - student)</span>
+                                            </h4>
+                                            <p class="summary">Ja Potęga Teofil...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="team">
+            <div class="row card primar" style="padding:0px; margin-bottom:0px; margin-top:40px;">
+                <ul class="event-list">
+                    <li>
+                        <time2 class="tttt" datetime="2014-07-20">
+                            <span class="number">3</span>
+                            <span class="signature">Aplikacje</span>
+                        </time2>
+                        <div class="info">
+                            <h2 class="title">Senior Java Developer</h2>
+                            <p class="desc">Bielsko, śląskie | Praca Stała | Ważna jeszcze 2 dni (do 10.06.2017)</p>
+                            <ul>
+                                <li style="width:50%;"><a data-toggle="collapse" data-target="#feature-5"><span class="fa fa-arrow-down"></span> Kandydaci</a></li>
+                                <li style="width:44%;"><span class="fa fa-pencil"></span> Edytuj</li>
+                                <li style="width:4%;"></li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li class="promote" style="width:33%;"><a href="#promuj"><span class="fa fa-usd"></span></a></li>
+                                <li class="refresh" style="width:34%;"><a href="#odnow"><span class="fa fa-refresh"></span></a></li>
+                                <li class="end" style="width:33%;"><a href="#zakoncz"><span class="fa fa-times"></span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="feature-5" class="collapse team">
+            <div class="row card primar" style="padding:0px; margin-top:0px;">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Pałąk Marian
+                                                <span class="pull-right pendiente">(Status studenta - Zawieszony)</span>
+                                            </h4>
+                                            <p class="summary">Wzorowy student posiadający wiedzę z zakresu IT...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://pickaface.net/gallery/avatar/Opi51c7dccf270e0.png" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Dymitri Twardedenko
+                                                <span class="pull-right pendiente">(Status - Student nieznanej uczelni)</span>
+                                            </h4>
+                                            <p class="summary">Амбіційний студент буде приймати будь-яку роботу, важливо бути виплачено в доларах...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://pickaface.net/gallery/avatar/Opi51c7dccf270e0.png" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Krupa Mirosław
+                                                <span class="pull-right pagado">(Status studenta - VIP RESET MEMBER)</span>
+                                            </h4>
+                                            <p class="summary">Ambitny student przyjmie każdą pracę...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="team">
+            <div class="row card primar" style="padding:0px; margin-bottom:0px; margin-top:40px;">
+                <ul class="event-list">
+                    <li>
+                        <time2 class="tttt" datetime="2014-07-20">
+                            <span class="number">2</span>
+                            <span class="signature">Aplikacje</span>
+                        </time2>
+                        <div class="info">
+                            <h2 class="title">Odśnieżanie Doradca Specjalisty</h2>
+                            <p class="desc">Bielsko, śląskie | Praca sezonowa | Ważna jeszcze 5 dni (do 18.06.2017)</p>
+                            <ul>
+                                <li style="width:50%;"><a data-toggle="collapse" data-target="#feature-4"><span class="fa fa-arrow-down"></span> Kandydaci</a></li>
+                                <li style="width:44%;"><span class="fa fa-pencil"></span> Edytuj</li>
+                                <li style="width:4%;"></li>
+                            </ul>
+                        </div>
+                        <div class="social">
+                            <ul>
+                                <li class="promote" style="width:33%;"><a href="#promuj"><span class="fa fa-usd"></span></a></li>
+                                <li class="refresh" style="width:34%;"><a href="#odnow"><span class="fa fa-refresh"></span></a></li>
+                                <li class="end" style="width:33%;"><a href="#zakoncz"><span class="fa fa-times"></span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="feature-4" class="collapse team">
+            <div class="row card primar" style="padding:0px; margin-top:0px;">
+                <div class="table-container">
+                    <table class="table table-filter">
+                        <tbody>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/fffabs/128.jpg" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                prof. n. tech. dr hab. n. fiz. inż. lek. med. Wyuczony Mieczysław
+                                                <span class="pull-right pagado">(Status - bezrobotny na zasiłku)</span>
+                                            </h4>
+                                            <p class="summary">Uważąm iż mam wyśmienite kwalifikacje gdyż również w tym kierunku ukończyłęm Wyższą Uczelnię Powiatową na kierunku Ogólny doradca specjalisty...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr data-status="pagado">
+                                <td>
+                                    <a href="#zakoncz" class="end"><span class="fa fa-times"></span></a>
+                                </td>
+                                <td>
+                                    <a href="javascript:;" class="star">
+                                        <span class="fa fa-star"></span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="media">
+                                        <a href="#" class="pull-left" style="padding:5px;">
+                                            <img src="https://pickaface.net/gallery/avatar/Opi51c7dccf270e0.png" class="media-photo">
+                                        </a>
+                                        <div class="media-body">
+                                            <span class="media-meta pull-right">Czerwiec 07, 2017</span>
+                                            <h4 class="title">
+                                                Krupa Mirosław
+                                                <span class="pull-right pagado">(Status studenta - VIP RESET MEMBER)</span>
+                                            </h4>
+                                            <p class="summary">Ambitny student przyjmie każdą pracę...</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+}

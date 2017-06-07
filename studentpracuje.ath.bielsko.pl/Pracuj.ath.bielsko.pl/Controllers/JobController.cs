@@ -13,5 +13,10 @@ namespace Pracuj.ath.bielsko.pl.Controllers
         {
             return View();
         }
+
+        public ActionResult JobManagement()
+        {
+            return View();
+        }
     }
 }

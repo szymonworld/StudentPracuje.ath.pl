@@ -40,6 +40,7 @@ namespace Pracuj.ath.bielsko.pl
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.min.css",
+                      "~/Content/offerts_management.css",
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
                       "~/Content/Styles.css",

@@ -223,6 +223,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Demo.css" />
     <Content Include="Content\now-ui-kit.css" />
+    <Content Include="Content\offerts_management.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Styles.css" />
     <Content Include="Content\themes\images\1.jpg" />
@@ -657,6 +658,7 @@
     <Content Include="Views\Profile\UserSettings.cshtml" />
     <Content Include="Views\Shared\SearchBar.cshtml" />
     <Content Include="Views\CVEditor\CVEditor.cshtml" />
+    <Content Include="Views\Job\JobManagement.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
