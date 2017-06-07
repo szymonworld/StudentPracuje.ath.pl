@@ -1,0 +1,106 @@
+﻿
+@{
+    ViewBag.Title = "UserProfile";
+}
+@section Banner{
+<div class="profile-page">
+    <div class="wrapper">
+        <div class="page-header page-header-small" filter-color="orange">
+            <div class="page-header-image" data-parallax="true" style="background-image: url(/Content/themes/images/8.png);">
+            </div>
+            <div class="container">
+                <div class="content-center">
+                    <div class="col-md-4">
+                        <div class="photo-container">
+                            <img src="~/Content/themes/images/apple-circle.png" style="background-color:white;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="title">Apple</h3>
+                        <p class="category"><a href="https://www.apple.com/jobs/pl/">apple.com/jobs</a></p>
+                        </div>
+                    <div class="col-md-4">
+                        <div class="content">
+                            <div class="social-description">
+                                <h2>6</h2>
+                                <p>aktywnych ofert pracy</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container">
+                <div class="button-container">
+                    <a href="#button" class="btn btn-primary btn-round btn-lg">Śledz oferty pracy</a>
+                    <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Oficjalny strona na linkedin">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Oficjalny strona na linkedin">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Oficjalny strona na twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </div>
+                <h3 class="title">Aktywne oferty:</h3>
+                <div class="team">
+                    <div class="row card primar" style="  padding:20px; margin-top:40px;">
+                        <div class="col-md-1">
+                            <div class="team-player text_align-center">
+                                <a href="@Url.Action("UserProfile", "Profile")">
+                                    <img src="~/Content/themes/images/apple.png" alt="Thumbnail Image" class="rounded img-fluid" style="max-height:90px;">
+                                </a>
+                                <p class="" style="text-align:center;">Apple</p>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="team-player">
+                                @Html.ActionLink("Swift Senior Analyst Programmer", "JobView", "Job", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%;text-align:left; font-size:20px;", @class = "btn btn-link btn-primary" })
+                                <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:0px;">
+                                    <span class="input-group-addon" style="padding:0px; padding-right:7px; background-color:white;">
+                                        <i class="now-ui-icons ui-2_settings-90" style="background-color:white;"></i>
+                                    </span>
+                                    <p style="background-color:white; margin-bottom:0px;">Programista</p>
+                                </div>
+                                <div class="input-group form-group-no-border input-lg" style="margin-bottom:20px; padding:0px;">
+                                    <span class="input-group-addon" style="padding:0px; background-color:white; padding-right:7px;">
+                                        <i class="now-ui-icons ui-1_calendar-60"></i>
+                                    </span>
+                                    <p style=" margin-bottom:0px;">Praca tymczasowa</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 ">
+                            <div class="team-player">
+                                <div class="input-group form-group-no-border input-lg" style="margin-bottom:0px; padding:2px;">
+                                    <span class="input-group-addon" style="padding:0px;background-color:white; padding-right:7px;">
+                                        <i class="now-ui-icons ui-2_time-alarm"></i>
+                                    </span>
+                                    <p style=" margin-bottom:0px;">01/01/0001</p>
+                                </div>
+                                <div class="input-group form-group-no-border input-lg" style="margin-bottom:20px; padding:2px;">
+                                    <span class="input-group-addon" style="padding:0px;background-color:white; padding-right:7px;">
+                                        <i class="now-ui-icons location_pin"></i>
+                                    </span>
+                                    <p style=" margin-bottom:0px;">Dunaj</p>
+                                </div>
+                                @Html.ActionLink("Zobacz oferte", "JobView", "Job", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%;text-align:left; font-size:20px;", @class = "btn btn-link btn-primary" })
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+}
+
+
+@section Content{
+
+}
+

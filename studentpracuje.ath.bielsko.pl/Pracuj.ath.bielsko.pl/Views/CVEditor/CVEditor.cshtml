@@ -1,0 +1,32 @@
+﻿@model Pracuj.ath.bielsko.pl.ViewModels.CVViewModel
+@using Pracuj.ath.bielsko.pl.Helpers
+@{
+    ViewBag.Title = "CV Edycja";
+}
+@section Banner
+{
+    <div class="wrapper">
+        <div class="page-header page-header-small">
+            <div class="page-header-image" data-parallax="false" style="background-image: url(/Content/themes/images/7.jpg);">
+            </div>
+            <div class="container">
+                <div class="content-center" style="padding-top:50px;">
+                    <h1 class="title">Dodaj CV.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section Content {
+
+    <div class="container">
+        <div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+            <div class="col-md-12">
+                <h3 style="color:white">Twoje CV:</h3>
+                @Html.CkEditorFor(m => m.cv, new { @class = "ckeditor", @style = "width:100%;" })
+            </div>
+        </div>
+        @Html.ActionLink("Zatwierdź CV", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "btn btn-primary btn-round btn-lg" })
+    </div>
+}

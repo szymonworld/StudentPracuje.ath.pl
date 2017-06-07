@@ -1,4 +1,5 @@
-﻿using Pracuj.ath.bielsko.pl.ViewModels;
+﻿using PagedList;
+using Pracuj.ath.bielsko.pl.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,18 +14,25 @@ namespace Pracuj.ath.bielsko.pl.Controllers
         {
             return View();
         }
-        public ActionResult JobOffers()
+        public ActionResult JobOffers(int? page)
         {
-            List<OffertViewModel> Offerts = new List<OffertViewModel>();
-            Offerts.Add(new OffertViewModel { Id = 1, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
-            Offerts.Add(new OffertViewModel { Id = 2, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
-            Offerts.Add(new OffertViewModel { Id = 3, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
-            Offerts.Add(new OffertViewModel { Id = 4, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
-            Offerts.Add(new OffertViewModel { Id = 5, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
-            Offerts.Add(new OffertViewModel { Id = 6, Company = "Microsoft", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now, Title = "Pomocnik do kawy" });
+            const int pageSize = 3;
+            int pageIndex = (page ?? 1);
 
-            ViewBag.Offerts = Offerts;
-            return View();
+            List<OffertViewModel> Offerts = new List<OffertViewModel>();
+            Offerts.Add(new OffertViewModel { Id = 1, Company = "Apple", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now.Date, Title = "Swift Senior Analyst Programmer", ContractType="Praca tymczasowa",  Img = Url.Content("~/Content/themes/images/apple.png"), JobCategory="Programista" });
+            Offerts.Add(new OffertViewModel { Id = 2, Company = "Microsoft", Description = "Podawanie kawy", Location = "California", PostedDate = DateTime.Now.Date, Title = "C# Junior MVC Developer", ContractType = "Staż", Img = Url.Content("~/Content/themes/images/ms.png"), JobCategory = "Programista" });
+            Offerts.Add(new OffertViewModel { Id = 3, Company = "Apple", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now.Date, Title = "Podawanie kawy mrożonej", ContractType = "Praca stała", Img = Url.Content("~/Content/themes/images/apple.png"), JobCategory = "Barman" });
+            Offerts.Add(new OffertViewModel { Id = 4, Company = "Apple", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now.Date, Title = "Swift Senior Analyst Programmer", ContractType = "Praca tymczasowa", Img = Url.Content("~/Content/themes/images/apple.png"), JobCategory = "Programista" });
+            Offerts.Add(new OffertViewModel { Id = 5, Company = "Apple", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now.Date, Title = "Swift Senior Analyst Programmer", ContractType = "Praca tymczasowa", Img = Url.Content("~/Content/themes/images/apple.png"), JobCategory = "Programista" });
+            Offerts.Add(new OffertViewModel { Id = 6, Company = "Apple", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now.Date, Title = "Swift Senior Analyst Programmer", ContractType = "Praca tymczasowa", Img = Url.Content("~/Content/themes/images/apple.png"), JobCategory = "Programista" });
+            Offerts.Add(new OffertViewModel { Id = 7, Company = "Apple", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now.Date, Title = "Swift Senior Analyst Programmer", ContractType = "Praca tymczasowa", Img = Url.Content("~/Content/themes/images/apple.png"), JobCategory = "Programista" });
+            Offerts.Add(new OffertViewModel { Id = 8, Company = "Apple", Description = "Podawanie kawy", Location = "Dubaj", PostedDate = DateTime.Now.Date, Title = "Swift Senior Analyst Programmer", ContractType = "Praca tymczasowa", Img = Url.Content("~/Content/themes/images/apple.png"), JobCategory = "Programista" });
+
+            IPagedList<OffertViewModel> IOfferts = Offerts.ToPagedList(pageIndex, pageSize);
+
+            //ViewBag.Offerts = Offerts;
+            return View(IOfferts);
         }
         [HttpPost]
         public JsonResult Index(string Prefix)
@@ -52,6 +60,8 @@ namespace Pracuj.ath.bielsko.pl.Controllers
         };
             return Def;
         }
+
+
 
     }
 }

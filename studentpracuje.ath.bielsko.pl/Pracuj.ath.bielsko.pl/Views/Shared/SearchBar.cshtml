@@ -1,0 +1,30 @@
+﻿
+@model Pracuj.ath.bielsko.pl.ViewModels.RegisterViewModel
+
+
+<div class="row card primar" data-background-color="orange" style=" padding:20px; margin-top:40px;">
+    <div class="col-md-12">
+        <h3 style="color:white">Szukaj:</h3>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="input-group form-group-no-border input-lg">
+                    <span class="input-group-addon">
+                        <i class="now-ui-icons ui-1_zoom-bold"></i>
+                    </span>
+                    @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @placeholder = "szukaj...", @style = "width: 100%" })
+                </div>
+            </div>
+            <div class="col-md-4">
+                @Html.ActionLink("Szukaj", "Register", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @style = "width: 100%", @class = "btn btn-primary btn-simple btn-round btn-lg" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                @Html.EnumDropDownListFor(model => model.AccountType, "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
+            </div>
+            <div class="col-md-6">
+                @Html.EnumDropDownListFor(model => model.AccountType, "Wybierz typ", new { @class = "btn btn-default btn-simple", @placeholder = "Typ Konta", @style = "width:inherit;  border-radius:30px; width: 100%; background-color:rgb(249, 99, 50); " })
+            </div>
+        </div>
+    </div>
+</div>

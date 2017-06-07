@@ -26,4 +26,5 @@ namespace Pracuj.ath.bielsko.pl.ViewModels
             RuleFor(x => x.Password).NotNull().WithMessage("Wprowadz Hasło").Length(6, 255).WithMessage("Hasło jest za krótkie");
         }
     }
+
 }

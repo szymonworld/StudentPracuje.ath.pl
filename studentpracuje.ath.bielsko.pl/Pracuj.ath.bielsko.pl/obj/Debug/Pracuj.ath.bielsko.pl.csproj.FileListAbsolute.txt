@@ -743,3 +743,7 @@ J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Pracuj.a
 J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.csprojResolveAssemblyReference.cache
 J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.dll
 J:\OneDrive\Shere\Nie commitowane studiuj\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\obj\Debug\Pracuj.ath.bielsko.pl.pdb
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\PagedList.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\PagedList.Mvc.dll
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\PagedList.xml
+I:\GameHub GitHub\StudentPracuje.ath.pl\studentpracuje.ath.bielsko.pl\Pracuj.ath.bielsko.pl\bin\PagedList.Mvc.xml

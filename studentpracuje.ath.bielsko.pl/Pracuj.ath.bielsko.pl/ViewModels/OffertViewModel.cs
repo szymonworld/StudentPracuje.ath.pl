@@ -13,5 +13,13 @@ namespace Pracuj.ath.bielsko.pl.ViewModels
         public DateTime PostedDate { get; set; }
         public string Location { get; set; }
         public string Company { get; set; }
+        public string Img { get; set; }
+        public string ContractType { get; set; }
+        public string JobCategory { get; set; }
+    }
+    public class ModelsForOfferts
+    {
+        public PagedList.IPagedList<OffertViewModel> PagedOffert { get; set; }
+        public RegisterViewModel searchBar { get; set; }
     }
 }

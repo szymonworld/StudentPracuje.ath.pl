@@ -67,6 +67,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -189,9 +195,11 @@
     <Compile Include="Areas\Student\StudentAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AddJobOffertController.cs" />
+    <Compile Include="Controllers\CVEditorController.cs" />
     <Compile Include="Controllers\EditorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\JobController.cs" />
+    <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="EntityDatabaseContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -203,6 +211,7 @@
     <Compile Include="Utils\MessageTranslator.cs" />
     <Compile Include="Utils\UserValidation.cs" />
     <Compile Include="ViewModels\AddJobOffertViewModel.cs" />
+    <Compile Include="ViewModels\CVViewModel.cs" />
     <Compile Include="ViewModels\DropDownList\JobCategory.cs" />
     <Compile Include="ViewModels\FieldOfStudyViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
@@ -214,19 +223,35 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Demo.css" />
     <Content Include="Content\now-ui-kit.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\Styles.css" />
     <Content Include="Content\themes\images\1.jpg" />
+    <Content Include="Content\themes\images\1.png" />
+    <Content Include="Content\themes\images\10.png" />
+    <Content Include="Content\themes\images\11.png" />
+    <Content Include="Content\themes\images\12.png" />
     <Content Include="Content\themes\images\2.jpg" />
+    <Content Include="Content\themes\images\2.png" />
     <Content Include="Content\themes\images\3.jpg" />
+    <Content Include="Content\themes\images\3.png" />
     <Content Include="Content\themes\images\4.jpg" />
+    <Content Include="Content\themes\images\4.png" />
     <Content Include="Content\themes\images\5.jpg" />
+    <Content Include="Content\themes\images\5.png" />
+    <Content Include="Content\themes\images\apple-circle.png" />
     <Content Include="Content\themes\images\6.jpg" />
+    <Content Include="Content\themes\images\6.png" />
     <Content Include="Content\themes\images\7.jpg" />
+    <Content Include="Content\themes\images\7.png" />
     <Content Include="Content\themes\images\8.jpg" />
+    <Content Include="Content\themes\images\8.png" />
+    <Content Include="Content\themes\images\9.png" />
     <Content Include="Content\themes\images\apple.png" />
     <Content Include="Content\themes\images\bg_Banner.jpg" />
     <Content Include="Content\themes\images\blurred-image-1.jpg" />
+    <Content Include="Content\themes\images\ITSupport.jpeg" />
     <Content Include="Content\themes\images\login.jpg" />
+    <Content Include="Content\themes\images\ms.png" />
     <Content Include="Content\themes\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -628,6 +653,10 @@
     <Content Include="Views\Job\JobView.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Editor.cshtml" />
     <Content Include="Views\AddJobOffert\AddJobOffert.cshtml" />
+    <Content Include="Views\Profile\UserProfile.cshtml" />
+    <Content Include="Views\Profile\UserSettings.cshtml" />
+    <Content Include="Views\Shared\SearchBar.cshtml" />
+    <Content Include="Views\CVEditor\CVEditor.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -638,6 +667,7 @@
     <Folder Include="Areas\Student\Models\" />
     <Folder Include="Areas\Student\Views\Shared\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\OffertsModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
